@@ -1,2 +1,0 @@
-# Jackbotein.com
-Personal Website
