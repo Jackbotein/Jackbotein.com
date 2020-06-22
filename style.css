@@ -1,4 +1,8 @@
 body {
+padding: 10px;
+background-color: rgb(100,50,10);
+}
+body {
 background-color: rgb(248,248,255);
   Font-family:sans-serif;
   color:RGB(12,10,100);
