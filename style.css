@@ -1,7 +1,6 @@
-.body {
-background-color:RGB(0,0,0);
-  Font-family:sans-serif;
-  color:RGB(12,10,100);
-  font-size:17px;
+.nav {
+  list-style:none;
+  text-align:center;
+  Padding:0;
+  Margin:0;
 }
-
