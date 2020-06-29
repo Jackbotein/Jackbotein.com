@@ -38,51 +38,39 @@ li a:hover {
     <br>
     
   <body>
-<!DOCTYPE html>
+    <!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>contact form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../main.css">
+ 
 </head>
+<body class="contactBody">   
+        <div class="wrapper">
+        <div class="title">
+           
+      
+        </div>
+      
 
-<body>
-
-<link href="contact-form.css" rel="stylesheet">
-
-<div class="fcf-body">
-    <div id="fcf-form">
-
-    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+        <form class="form">
+          <input type="text" class="name entry " placeholder="Your Name"/>
+          
+          <input type="text" class="email entry" placeholder="Email"/>
+          
+          <textarea class="message entry" placeholder="Message"></textarea> 
+          
+          <button class="submit entry" onclick="thanks()">Submit</button>
+        </form>  
         
-        <div class="fcf-form-group">
-            <label for="Name" class="fcf-label">Name</label>
-            <div class="fcf-input-group">
-                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-            </div>
-        </div>
-
-        <div class="fcf-form-group">
-            <label for="Email" class="fcf-label">Email</label>
-            <div class="fcf-input-group">
-                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-            </div>
-        </div>
-
-        <div class="fcf-form-group">
-            <label for="Message" class="fcf-label">Inquiry</label>
-            <div class="fcf-input-group">
-                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-            </div>
-        </div>
-
-        <div class="fcf-form-group">
-            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
-        </div>
-
-    </form>
-    </div>
-
-</div>
+        <div class="shadow"></div>
+      </div>
+      
+    <script src="app.js"></script>
+</body>
+</html>
 </body>
 </html>
  </body>
