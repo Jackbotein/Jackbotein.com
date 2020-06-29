@@ -1,8 +1,8 @@
 <?php
-if (isset($_POST['submit'])) {
-  $name = $_POST['Your name'];
-  $email = $_POST['Email'];
-  $message = $_POST['Message'];
+if (isset($_POST['submit entry'])) {
+  $name = $_POST['name entry'];
+  $email = $_POST['email entry'];
+  $message = $_POST['message entry'];
 
   $mailTo = "Jackbotein@gmail.com";
   $headers = "Od: ".$email;
