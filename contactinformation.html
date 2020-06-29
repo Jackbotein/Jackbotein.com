@@ -36,35 +36,45 @@ li a:hover {
   <li><a href="https://www.jackbotein.com/contactinformation.html">Contact Information</a></li>
   </ul></center>
       <!DOCTYPE html>
-<html lang="en">
+<html lang="pl" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="contact.css">
- 
+  <meta charset="utf-8">
+  <title>Kontakt</title>
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=yes">
+  <link rel="stylesheet" href="contact.css">
 </head>
-<body class="contactBody">   
-        <div class="wrapper">
-        <div class="title">
-           
-      
-        </div>
-      
-
-        <form class="form">
-          <input type="text" class="name entry " placeholder="Your Name"/>
-          
-          <input type="text" class="email entry" placeholder="Email"/>
-          
-          <textarea class="message entry" placeholder="Message"></textarea> 
-          
-          <button class="submit entry" onclick="thanks()">Submit</button>
-        </form>  
-        
-        <div class="shadow"></div>
+<body>
+  <form class="contact" action="contact.php" method="post">
+    <h1>Kontakt</h1>
+    <div class="margin">
+      <div class="inputGroup">
+        <input type="text" type="name" required />
+        <span class="inputBar"></span>
+        <label>Imię</label>
       </div>
-      
-    <script src="app.js"></script>
+
+      <div class="inputGroup">
+        <input type="text" type="subject" required />
+        <span class="inputBar"></span>
+        <label>Temat</label>
+      </div>
+
+      <div class="inputGroup">
+        <input type="text" type="email" required />
+        <span class="inputBar"></span>
+        <label>Email</label>
+      </div>
+
+      <div class="inputGroup">
+        <textarea type="textarea" name="message" required></textarea>
+        <span class="inputBar"></span>
+        <label>Wiadomość</label>
+      </div>
+
+      <button name="submit">Wyślij</button>
+    </div>
+  </form>
+</body>
+</html>
 </body>
 </html>
