@@ -5,7 +5,7 @@ if (isset($_POST['submit'])) {
   $email = $_POST['email'];
   $message = $_POST['message'];
 
-  $mailTo = "lipiec002@wp.pl";
+  $mailTo = "Jackbotein@gmail.com";
   $headers = "Od: ".$email;
   $txt = "Otrzymałeś maila od ".$name.". \n\n".$message;
 
