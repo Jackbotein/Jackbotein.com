@@ -1,4 +1,5 @@
-import React from "react";
+<script>
+  import React from "react";
 
 export default class MyForm extends React.Component {
   constructor(props) {
