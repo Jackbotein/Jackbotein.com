@@ -7,7 +7,7 @@ margin:0;
 .footerimg.png {
    position: fixed;
    left: 0;
-   bottom: 0;
+   bottom: -10;
    width: 100%;
    background-color:rgb(0, 100, 0);
      }
