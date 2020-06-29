@@ -10,6 +10,6 @@ if (isset($_POST['submit'])) {
   $txt = "Otrzymałeś maila od ".$name.". \n\n".$message;
 
   mail($mailTo, $subject, $txt, $headers);
-  header("Location: index.php?mailsend");
+  header("Location: contact.php?mailsend");
 }
 */
