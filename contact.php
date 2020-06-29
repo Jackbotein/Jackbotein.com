@@ -1,14 +1,15 @@
-<?php
-if (isset($_POST['submit entry'])) {
-  $name = $_POST['name entry'];
-  $email = $_POST['email entry'];
-  $message = $_POST['message entry'];
+/*<?php
+if (isset($_POST['submit'])) {
+  $name = $_POST['name'];
+  $subject = $_POST['subject'];
+  $email = $_POST['email'];
+  $message = $_POST['message'];
 
-  $mailTo = "Jackbotein@gmail.com";
+  $mailTo = "lipiec002@wp.pl";
   $headers = "Od: ".$email;
   $txt = "Otrzymałeś maila od ".$name.". \n\n".$message;
 
   mail($mailTo, $subject, $txt, $headers);
-  header("Location: contact.php?mailsend");
+  header("Location: index.php?mailsend");
 }
-?>
+*/
