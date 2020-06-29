@@ -35,46 +35,22 @@ li a:hover {
   <li><a href="https://www.jackbotein.com/policyvision.html">Policy Vision</a></li>
   <li><a href="https://www.jackbotein.com/contactinformation.html">Contact Information</a></li>
   </ul></center>
-      <!DOCTYPE html>
-<html lang="pl" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <title>Kontakt</title>
-  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=yes">
-  <link rel="stylesheet" href="contact.css">
-</head>
-<body>
-  <form class="contact" action="contact.php" method="post">
-    <h1>Kontakt</h1>
-    <div class="margin">
-      <div class="inputGroup">
-        <input type="text" type="name" required />
-        <span class="inputBar"></span>
-        <label>Imię</label>
-      </div>
+      <form
+  action="https://formspree.io/xbjzaqla"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="text" name="_replyto">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
 
-      <div class="inputGroup">
-        <input type="text" type="subject" required />
-        <span class="inputBar"></span>
-        <label>Temat</label>
-      </div>
+  <!-- your other form fields go here -->
 
-      <div class="inputGroup">
-        <input type="text" type="email" required />
-        <span class="inputBar"></span>
-        <label>Email</label>
-      </div>
-
-      <div class="inputGroup">
-        <textarea type="textarea" name="message" required></textarea>
-        <span class="inputBar"></span>
-        <label>Wiadomość</label>
-      </div>
-
-      <button name="submit">Wyślij</button>
-    </div>
-  </form>
-</body>
-</html>
+  <button type="submit">Send</button>
+</form>
 </body>
 </html>
