@@ -81,7 +81,8 @@ input[type=submit]:hover {
 <body>
 <br>
 <div class="container">
-  <form method="post" action="mailto:Jackbotein@gmail.com">
+  <form action= "mailto:Jackbotein@gmail.com?subject=myform_submission" 
+enctype="text/plain" onsubmit="location.href='thanks.html';" >
     <label for="name">Name</label>
     <input type="text" id="name" name="name" placeholder="...">
     <label for="inquiry">Inquiry</label>
