@@ -19,3 +19,7 @@ margin:0;
    font-family:sans-serif;
    color:rgb(0, 95, 127);
 }
+.textzone {
+   width:500px;
+   background-color:rgb(0, 95, 127);
+}
