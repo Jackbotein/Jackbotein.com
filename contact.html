@@ -45,12 +45,17 @@ li a:hover {
   <li><a href="https://www.jackbotein.com/contact.html">Contact</a></li>
   </ul></center>
     <html>
+      <br>
    <div id="contact">
         <div id="contact-form">
                 <form action="https://formspree.io/xbjzaqla" method="POST">
                 <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Type your message" required></textarea>
+                <input type="email" name="_replyto" placeholder="Email I can reach you at" required>
+                  <br>
+                <textarea name="Subject of Inquiry" placeholder="Potential Project Idea:" required></textarea>
+                  <br>
+                <textarea name="message" placeholder=".........." required></textarea>
+                  <br>
                 <button type="submit">Send</button>
             </form>
         </div>
@@ -59,54 +64,5 @@ li a:hover {
 <div class="footer">
   <p>2020 Jack Botein, All Rights Reserved</p>
 </div>
-    <!-- Place this script at the end of the body tag -->
-
-<script>
-  window.addEventListener("DOMContentLoaded", function() {
-
-    // get the form elements defined in your form HTML above
-    
-    var form = document.getElementById("my-form");
-    var button = document.getElementById("my-form-button");
-    var status = document.getElementById("my-form-status");
-
-    // Success and Error functions for after the form is submitted
-    
-    function success() {
-      form.reset();
-      button.style = "display: none ";
-      status.innerHTML = "Thanks!";
-    }
-
-    function error() {
-      status.innerHTML = "Oops! There was a problem.";
-    }
-
-    // handle the form submission event
-
-    form.addEventListener("submit", function(ev) {
-      ev.preventDefault();
-      var data = new FormData(form);
-      ajax(form.method, form.action, data, success, error);
-    });
-  });
-  
-  // helper function for sending an AJAX request
-
-  function ajax(method, url, data, success, error) {
-    var xhr = new XMLHttpRequest();
-    xhr.open(method, url);
-    xhr.setRequestHeader("Accept", "application/json");
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return;
-      if (xhr.status === 200) {
-        success(xhr.response, xhr.responseType);
-      } else {
-        error(xhr.status, xhr.response, xhr.responseType);
-      }
-    };
-    xhr.send(data);
-  }
-</script>
  </body>
 </html>
