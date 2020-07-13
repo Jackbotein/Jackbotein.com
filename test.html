@@ -42,12 +42,12 @@
           mapTypeId: 'terrain'
         });
 
-        var kmlLayer = new google.maps.KmlLayer(src, {
+        var kmzLayer = new google.maps.KmzLayer(src, {
           suppressInfoWindows: true,
           preserveViewport: false,
           map: map
         });
-        kmlLayer.addListener('click', function(event) {
+        kmzLayer.addListener('click', function(event) {
           var content = event.featureData.infoWindowHtml;
           var testimonial = document.getElementById('capture');
           testimonial.innerHTML = content;
