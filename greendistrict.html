@@ -10,30 +10,50 @@
   <body>
     <div id="main" class="scroll-container">
     <center>
-      <section style="background-color:black">
-      <br>
-      <div class="navigation">
+        
+<section style="background-color:black">
+<br>
 <span><a href="#2">Concept</a></span>
 <span><a href="#3">Deliverables</a></span>
 <span><a href="#4">Contact</a></span>
-
 <div class="spacer"></div>
+<video autoplay muted loop id="myVideo">
+  <source src="https://www.jackbotein.com/Greendistrictanimation.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+      <div class="content">
       <div class="title"><i>A Proposal by Jack Botein</i></div>
       <div class="name">The Green District, Boston MA</div>
-      </section>
-        
-<section style="background-color:black">
-      <video autoplay muted loop id="myVideo">
-  <source src="https://www.jackbotein.com/Greendistrictanimation.mp4" type="video/mp4">
-</video>
+</div>
+
 <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
 #myVideo {
-  position: relative;
+  position: fixed;
   right: 0;
   bottom: 0;
-  width: 100%;
-  height: 100%;
+  min-width: 100%; 
+  min-height: 100%;
 }
+
+.content {
+  position: fixed;
+  bottom: 0;
+  top: 50;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
 </style>
 </section>
         
@@ -115,22 +135,24 @@
     .title {
     font-family:'Work Sans', sans-serif;
     font-size: 2.5vw;
-    color: white;
+    color: black;
     margin-bottom: .5%;
-    }
-    
-    
+    }   
     
     .name {
     font-family:'Bungee Shade', cursive;
     font-size: 6vw;
-    color: white;
+    color: black;
+    transition-duration: 2s;
     }
+    
+    .name:hover {
+    font-size: 4vw;
     
     .heading {
     font-family:'Bungee Shade', cursive;
     font-size: 4vw;
-    color: white;
+    color: black;
     }
     
     .sectiontopspacer {
