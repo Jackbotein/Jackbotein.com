@@ -13,7 +13,7 @@ window.Krux||((Krux=function(){Krux.q.push(arguments);}).q=[]);
       return ls[k] || '';
     } else if (navigator.cookieEnabled) {
       var m = document.cookie.match(k+'=([^;]*)');
-      return (m && unescape(m[1])) || '';
+      return (m && unescape(m[1])) || '';prog
     } else {
       return '';
     }
