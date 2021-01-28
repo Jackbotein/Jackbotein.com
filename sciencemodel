@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Scientific Model | Stable Versus Unstable Atoms</title>
+</head>
+<body>
+<div class="header">
+<div class="title">Stable versus Unstable Atoms</div>
+<div class="subtitle">By: Jack Botein</div>
+</div>
+<div class="description">
+Stable atoms are atoms that have reached a state of octet, meaning that they have either eight or zero valence electrons, further such an atom must have an equal or greater number of neutrons than protons in the nucleus. A stable atom has a balanced nucleus. By contrast, unstable atoms are atoms that are not at a state of octet and have more protons than neutrons. This forces the to shed or gain electrons to get to octet, destabilizing the nucleus. This destabilized nucleus in turn makes the whole atom unstable. 
+</div>
+<div class="heading">
+Examples:
+</div>
+<span>Stable Atom</span>
+<span>Unstable Atom</span>
+<div class="footer">
+2021 Honors Chemistry Scientific Model
+</div>
+
+<style>
+.header {
+text-align: center;
+padding-top: 2vh;
+padding-bottom: 2vh;
+width: 100%;
+background-color: silver;
+color: black;
+}
+.title {
+font-size: 5vw; 
+}
+
+.subtitle {
+font-size: 1.5vw;
+}
+
+.description {
+margin-top: 3vh;
+margin-bottom: 3vh;
+font-size: 1.5vw;
+margin-left: 5%;
+margin-right: 5%;
+}
+
+.heading {
+text-align: center;
+font-size: 3vw;
+}
+</style>
+</body>
+</html>
