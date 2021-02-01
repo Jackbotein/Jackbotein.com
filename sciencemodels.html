@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>Scientific Models</title>
+</head>
+<body style="margin:0;width:100%;">
+<div class="header">
+<div class="title">Scientific Models</div>
+<div class="subtitle">By: Jack Botein</div>
+</div>
+<br>
+<center><span style="margin-left:1vw;margin-right:1vw;"><button onclick="topic1()">Model #1:<br>Stable Versus Unstable Atoms</button></span>
+<span style="margin-left:1vw;margin-right:1vw;"><button onclick="topic1()">Model #2:<br>Parts of an atom: proton, neutron, electron, nucleus</button></span>
+<span style="margin-left:1vw;margin-right:1vw;"><button onclick="topic1()">Model #3:<br>Physical vs chemical changes</button></span></center>
+<br>
+<div id="selectedtopic"></div>
+<div class="footer">
+2021 Honors Chemistry Scientific Model, Jack Botein.
+</div>
+<script>
+function topic1() {
+  document.getElementById("selectedtopic").innerHTML = "<iframe src='https://www.jackbotein.com/scientificmodel1' style='border:0px #ffffff none;' name='myiFrame' scrolling='no' frameborder='1' marginheight='0px' marginwidth='0px' height='1000px' width='100%' allowfullscreen></iframe>";
+}
+</script>
+<style>
+.header {
+text-align: center;
+padding-top: 2vh;
+padding-bottom: 2vh;
+width: 100%;
+background-color: silver;
+color: black;
+}
+.title {
+font-size: 5vw; 
+}
+
+.subtitle {
+font-size: 1.5vw;
+}
+
+.topicheading {
+  margin-top: 3vh;
+  width: 100%;
+  text-align:center;
+  font-size: 4vw;
+}
+
+.description {
+margin-top: 1vh;
+margin-bottom: 3vh;
+font-size: 1.5vw;
+margin-left: 5%;
+margin-right: 5%;
+}
+
+.heading {
+text-align: center;
+font-size: 3vw;
+}
+
+.footer {
+  position:absolute;
+  position: fixed;
+  bottom: 0vh;
+  font-size:2vh;
+  color:black;
+  width:100%;
+  text-align:center;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+  background-color: silver;
+  transition-duration: 1s;
+}
+
+.footer:hover {
+  color: gray;
+}
+
+a {
+color: black;
+text-decoration: none;
+}
+
+</style>
+</body>
+</html>
