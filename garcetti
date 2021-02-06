@@ -1,0 +1,783 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:article="http://ogp.me/ns/article#"
+  xmlns:book="http://ogp.me/ns/book#"
+  xmlns:profile="http://ogp.me/ns/profile#"
+  xmlns:video="http://ogp.me/ns/video#"
+  xmlns:product="http://ogp.me/ns/product#"><head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta charset="utf-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"1ace86b44a",applicationID:"48820951"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(6),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(y,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var w=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1194.min.js"},h=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:w,features:{},xhrWrappable:h,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var x=0},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(7),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="https://www.lamayor.org/sites/g/files/wph446/f/Favicon.png" type="image/png" />
+<meta name="description" content="Los Angeles Mayor Eric Garcetti." />
+<meta name="abstract" content="Eric Garcetti is the 42nd Mayor of Los Angeles. His &quot;back to basics&quot; agenda is focused on job creation and solving everyday problems for L.A. residents." />
+<meta name="keywords" content="L.A., mayor, Los Angeles, Eric Garcetti" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="https://www.lamayor.org/mayor-garcetti-establishes-tom-labonge-summit-griffith-park" />
+<link rel="shortlink" href="https://www.lamayor.org/node/17516" />
+<meta property="og:site_name" content="Office of Los Angeles Mayor Eric Garcetti" />
+<meta property="og:title" content="Mayor Garcetti establishes &quot;Tom LaBonge Summit&quot; in Griffith Park" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.lamayor.org/mayor-garcetti-establishes-tom-labonge-summit-griffith-park" />
+<meta property="og:description" content="" />
+<meta property="og:updated_time" content="2021-01-27T15:51:13-08:00" />
+<meta property="og:image" content="https://www.lamayor.org/sites/g/files/wph446/f/key_image/9ab378fd-16fd-4b87-8898-88579c02d9b3%20%281%29.jpg" />
+<meta property="og:image:secure_url" content="https://www.lamayor.org/sites/g/files/wph446/f/key_image/9ab378fd-16fd-4b87-8898-88579c02d9b3%20%281%29.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@MayorOfLA ‏" />
+<meta name="twitter:title" content="Mayor Garcetti establishes &quot;Tom LaBonge Summit&quot; in Griffith Park" />
+<meta name="twitter:url" content="https://www.lamayor.org/mayor-garcetti-establishes-tom-labonge-summit-griffith-park" />
+<meta name="twitter:description" content="LaBonge family joins Mayor in honoring late Councilmember, lifelong public servant LOS ANGELES — Mayor Eric Garcetti today announced the establishment of “Tom LaBonge Summit” in historic Griffith" />
+<meta name="twitter:image" content="https://www.lamayor.org/sites/g/files/wph446/f/key_image/9ab378fd-16fd-4b87-8898-88579c02d9b3%20%281%29.jpg" />
+<meta property="article:published_time" content="2021-01-27T13:14:53-08:00" />
+<meta property="article:modified_time" content="2021-01-27T15:51:13-08:00" />
+<meta itemprop="description" content="LaBonge family joins Mayor in honoring late Councilmember, lifelong public servant LOS ANGELES — Mayor Eric Garcetti today announced the establishment of “Tom LaBonge Summit” in historic Griffith Park, joining the LaBonge family in honoring the late Councilmember’s life and legacy. " />
+<meta itemprop="name" content="Mayor Garcetti establishes &quot;Tom LaBonge Summit&quot; in Griffith Park" />
+<meta itemprop="image" content="https://www.lamayor.org/sites/g/files/wph446/f/key_image/9ab378fd-16fd-4b87-8898-88579c02d9b3%20%281%29.jpg" />
+<meta name="dcterms.creator" content="Mayor Garcetti establishes &quot;Tom LaBonge Summit&quot; in Griffith Park" />
+<meta name="dcterms.title" content="Mayor Garcetti establishes &quot;Tom LaBonge Summit&quot; in Griffith Park" />
+<meta name="dcterms.publisher" content="Office of Los Angeles Mayor Eric Garcetti" />
+<meta name="dcterms.type" content="Text" />
+<meta name="dcterms.format" content="text/html" />
+<meta name="dcterms.identifier" content="https://www.lamayor.org/mayor-garcetti-establishes-tom-labonge-summit-griffith-park" />
+  <meta name="google-site-verification" content="d758a_MLhaU6oQvbmnWpR8hl7xKSwrJYE6iafSITSGY" />
+  
+  <title>Mayor Garcetti support allowing Airbnb's with COVID-19 Immune Hosts and Guests | Office of Los Angeles Mayor Eric Garcetti</title>
+  <style type="text/css" media="all">
+@import url("https://www.lamayor.org/modules/system/system.base.css?qnxiln");
+@import url("https://www.lamayor.org/modules/system/system.menus.css?qnxiln");
+@import url("https://www.lamayor.org/modules/system/system.messages.css?qnxiln");
+@import url("https://www.lamayor.org/modules/system/system.theme.css?qnxiln");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.lamayor.org/profiles/la/modules/contrib/calendar/css/calendar_multiday.css?qnxiln");
+@import url("https://www.lamayor.org/profiles/la/modules/contrib/cck_multiple_field_remove/css/cck_multiple_field_remove.css?qnxiln");
+@import url("https://www.lamayor.org/profiles/la/modules/contrib/date/date_api/date.css?qnxiln");
+@import url("https://www.lamayor.org/profiles/la/modules/contrib/date/date_popup/themes/datepicker.1.7.css?qnxiln");
+@import url("https://www.lamayor.org/profiles/la/modules/contrib/date/date_repeat_field/date_repeat_field.css?qnxiln");
+@import url("https://www.lamayor.org/modules/field/theme/field.css?qnxiln");
+@import url("https://www.lamayor.org/profiles/la/modules/contrib/google_cse/google_cse.css?qnxiln");
+@import url("https://www.lamayor.org/modules/node/node.css?qnxiln");
+@import url("https://www.lamayor.org/modules/poll/poll.css?qnxiln");
+@import url("https://www.lamayor.org/modules/search/search.css?qnxiln");
+@import url("https://www.lamayor.org/modules/user/user.css?qnxiln");
+@import url("https://www.lamayor.org/profiles/la/modules/contrib/webform_workflow/includes/webform_workflow.css?qnxiln");
+@import url("https://www.lamayor.org/profiles/la/modules/contrib/workflow/workflow_admin_ui/workflow_admin_ui.css?qnxiln");
+@import url("https://www.lamayor.org/profiles/la/modules/contrib/views/css/views.css?qnxiln");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.lamayor.org/profiles/la/modules/contrib/colorbox/styles/default/colorbox_style.css?qnxiln");
+@import url("https://www.lamayor.org/profiles/la/modules/contrib/ctools/css/ctools.css?qnxiln");
+@import url("https://www.lamayor.org/profiles/la/libraries/sposit/sposit.css?qnxiln");
+@import url("https://www.lamayor.org/profiles/la/modules/custom/la_starter_googletranslate/la_starter_googletranslate.css?qnxiln");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.lamayor.org/sites/g/files/wph446/themes/site/css/style.css?qnxiln");
+</style>
+<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,500,500italic,900,900italic&amp;subset=latin" media="all" />
+  
+  
+  <!-- HTML5 element support for IE6-8 -->
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script type="text/javascript" src="https://www.lamayor.org/profiles/la/modules/contrib/jquery_update/replace/jquery/1.8/jquery.min.js?v=1.8.3"></script>
+<script type="text/javascript" src="https://www.lamayor.org/misc/jquery-extend-3.4.0.js?v=1.8.3"></script>
+<script type="text/javascript" src="https://www.lamayor.org/misc/jquery-html-prefilter-3.5.0-backport.js?v=1.8.3"></script>
+<script type="text/javascript" src="https://www.lamayor.org/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="https://www.lamayor.org/misc/drupal.js?qnxiln"></script>
+<script type="text/javascript" src="https://www.lamayor.org/profiles/la/modules/contrib/fancy_file_delete/js/fancyfiledelete.js?qnxiln"></script>
+<script type="text/javascript" src="https://www.lamayor.org/profiles/la/modules/contrib/google_cse/google_cse.js?qnxiln"></script>
+<script type="text/javascript" src="https://www.lamayor.org/profiles/la/libraries/colorbox/jquery.colorbox-min.js?qnxiln"></script>
+<script type="text/javascript" src="https://www.lamayor.org/profiles/la/modules/contrib/colorbox/js/colorbox.js?qnxiln"></script>
+<script type="text/javascript" src="https://www.lamayor.org/profiles/la/modules/contrib/colorbox/styles/default/colorbox_style.js?qnxiln"></script>
+<script type="text/javascript" src="https://www.lamayor.org/profiles/la/modules/contrib/getdirections/js/getdirections.js?qnxiln"></script>
+<script type="text/javascript" src="https://www.lamayor.org/profiles/la/libraries/sposit/sposit.js?qnxiln"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "pathToTheme": "sites/g/files/wph446/themes/site" });
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.lamayor.org/profiles/la/modules/custom/la_starter_googletranslate/la_starter_googletranslate.js?qnxiln"></script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript" src="https://www.lamayor.org/profiles/la/modules/custom/simple_sharethis/simple_sharethis.js?qnxiln"></script>
+<script type="text/javascript" src="https://www.lamayor.org/profiles/la/modules/contrib/google_analytics/googleanalytics.js?qnxiln"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-44864291-1", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.lamayor.org/sites/g/files/wph446/themes/site/js/bootstrap.min.js?qnxiln"></script>
+<script type="text/javascript" src="https://www.lamayor.org/sites/g/files/wph446/themes/site/js/jquery.cycle2.min.js?qnxiln"></script>
+<script type="text/javascript" src="https://www.lamayor.org/sites/g/files/wph446/themes/site/js/load.js?qnxiln"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"lamayor","theme_token":"2hygwC3yIwF8M7OjjvxtgI5u1Kpp7nB8nqBb8l1hLGk","js":{"profiles\/la\/modules\/contrib\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"profiles\/la\/modules\/contrib\/fancy_file_delete\/js\/fancyfiledelete.js":1,"profiles\/la\/modules\/contrib\/google_cse\/google_cse.js":1,"profiles\/la\/libraries\/colorbox\/jquery.colorbox-min.js":1,"profiles\/la\/modules\/contrib\/colorbox\/js\/colorbox.js":1,"profiles\/la\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.js":1,"profiles\/la\/modules\/contrib\/getdirections\/js\/getdirections.js":1,"profiles\/la\/libraries\/sposit\/sposit.js":1,"0":1,"profiles\/la\/modules\/custom\/la_starter_googletranslate\/la_starter_googletranslate.js":1,"\/\/translate.google.com\/translate_a\/element.js?cb=googleTranslateElementInit":1,"profiles\/la\/modules\/custom\/simple_sharethis\/simple_sharethis.js":1,"profiles\/la\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"1":1,"sites\/g\/files\/wph446\/themes\/site\/js\/bootstrap.min.js":1,"sites\/g\/files\/wph446\/themes\/site\/js\/jquery.cycle2.min.js":1,"sites\/g\/files\/wph446\/themes\/site\/js\/load.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"profiles\/la\/modules\/contrib\/calendar\/css\/calendar_multiday.css":1,"profiles\/la\/modules\/contrib\/cck_multiple_field_remove\/css\/cck_multiple_field_remove.css":1,"profiles\/la\/modules\/contrib\/date\/date_api\/date.css":1,"profiles\/la\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"profiles\/la\/modules\/contrib\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"profiles\/la\/modules\/contrib\/google_cse\/google_cse.css":1,"modules\/node\/node.css":1,"modules\/poll\/poll.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"profiles\/la\/modules\/contrib\/webform_workflow\/includes\/webform_workflow.css":1,"profiles\/la\/modules\/contrib\/workflow\/workflow_admin_ui\/workflow_admin_ui.css":1,"profiles\/la\/modules\/contrib\/views\/css\/views.css":1,"profiles\/la\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.css":1,"profiles\/la\/modules\/contrib\/ctools\/css\/ctools.css":1,"profiles\/la\/libraries\/sposit\/sposit.css":1,"profiles\/la\/modules\/custom\/la_starter_googletranslate\/la_starter_googletranslate.css":1,"sites\/g\/files\/wph446\/themes\/site\/css\/style.css":1,"https:\/\/fonts.googleapis.com\/css?family=Roboto:300,300italic,500,500italic,900,900italic\u0026subset=latin":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"getdirections_colorbox":{"enable":0,"width":"600","height":"600"},"googleCSE":{"cx":"005408628472521677429:3yyavk2hghi","language":"","resultsWidth":600,"domain":"www.google.com"},"simple_instagram_feed":{"instagram_username":"mayorofla","instagram_display_profile":0,"instagram_display_biography":0,"instagram_items":"6","instagram_items_per_row":6,"instagram_styling":"true"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":1},"urlIsAjaxTrusted":{"\/mayor-garcetti-establishes-tom-labonge-summit-griffith-park":true}});
+//--><!]]>
+</script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-Bx4pytHkyTDy3aJKjGkGoHPt3tvv6zlwwjc3iqN7ktaiEMLDPqLSZYts2OjKcBx1" crossorigin="anonymous">
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-17516 node-type-article press-release" >
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    
+
+  
+<div class="navbar-collapse collapse primary">
+<nav role="navigation">
+  <div class="region region-navigation">
+    <div id="block-menu-block-12" class="block block-menu-block">
+
+    
+  <div class="content">
+    <div class="menu-block-wrapper menu-block-12 menu-name-menu-main-menu-18- parent-mlid-0 menu-level-1">
+  <ul class="menu nav"><li class="first leaf menu-mlid-9251"><a href="/how-can-we-help" title="How can we help?">How can we help?</a></li>
+<li class="leaf menu-mlid-9481"><a href="/about" title="About Mayor Garcetti">About Mayor Garcetti</a></li>
+<li class="leaf menu-mlid-9351"><a href="/our-team" title="Meet the Team">Meet the Team</a></li>
+<li class="leaf menu-mlid-9341"><a href="/OurWork" title="Our Work">Our Work</a></li>
+<li class="last leaf menu-mlid-9336"><a href="/PressRoom" title="Press Room">Press Room</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="block-block-61" class="block block-block gt_mobile-block">
+
+    
+  <div class="content">
+    <style>
+#google_translate_mobile_element_wrap {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    margin-left: 1em;
+    padding: 0;
+    border-radius: 0px;
+    background: transparent;
+    float: left;
+    margin-right: 5px;
+}
+#google_translate_mobile_element_wrap:not(.showing ) {
+    display: inherit;
+}
+#google_translate_mobile_element_wrap #google_translate_element {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    margin: 0 5px 0 0;
+    padding: 0;
+    border-radius: 0px;
+    background: transparent;
+    float: left;
+}
+#google_translate_mobile_element_wrap #google_translate_element:not(.showing ) {
+    display: inherit;
+}
+div#block-block-61 {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+div#block-block-61 .fa-language {
+    color: #ffffff;
+    font-size: 30px;
+    transition: all ease-in .5s;
+    cursor: pointer;
+}
+div#block-block-61 .fa-language:hover {
+    color: #ffffff;
+}
+
+div#block-block-61 a.contextual-links-trigger {
+    right: -30px;
+    position: absolute;
+}
+</style>
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+    jQuery('#google_translate_mobile_toggle').click(function(){
+        //console.log("mobile clicked, gt_location = " + gt_location);
+        if(gt_location == "desktop" || gt_location == undefined){
+            jQuery("#google_translate_element").detach().appendTo('#google_translate_mobile_element_wrap');
+        }
+        jQuery('#google_translate_mobile_toggle').toggleClass('active');
+        jQuery('#google_translate_mobile_element_wrap').toggleClass('hide');
+        gt_location = "mobile";
+        //console.log("gt_location = " + gt_location);
+    });
+});
+</script>
+
+<span id="google_translate_mobile_toggle" class="fa fa-language">&nbsp;</span>
+
+<div id="google_translate_mobile_element_wrap" class="hide"></div>  </div>
+</div>
+  </div>
+</nav>
+</div>
+
+
+<div class="main-container">
+
+
+    <header class="main-header">
+      <div class="row">
+                <a id="logo" class="text-hide left-block" href="/" title="Home">Office of Los Angeles Mayor Eric Garcetti</a>
+                        <h1>Office of Los Angeles Mayor Eric Garcetti</h1>
+        
+                    <div class="region region-top-navigation">
+    <div id="block-menu-block-11" class="block block-menu-block">
+
+    
+  <div class="content">
+    <div class="menu-block-wrapper menu-block-11 menu-name-menu-main-menu-18- parent-mlid-0 menu-level-1">
+  <ul class="menu nav"><li class="first leaf menu-mlid-9251"><a href="/how-can-we-help" title="How can we help?">How can we help?</a></li>
+<li class="leaf menu-mlid-9481"><a href="/about" title="About Mayor Garcetti">About Mayor Garcetti</a></li>
+<li class="leaf menu-mlid-9351"><a href="/our-team" title="Meet the Team">Meet the Team</a></li>
+<li class="leaf menu-mlid-9341"><a href="/OurWork" title="Our Work">Our Work</a></li>
+<li class="last leaf menu-mlid-9336"><a href="/PressRoom" title="Press Room">Press Room</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="block-block-56" class="block block-block gt-block">
+
+    
+  <div class="content">
+    <style>
+   #google_translate_desktop_element_wrap {
+   float: left;
+   margin: 0 5px 0 0;
+   background: transparent;
+   }
+   #google_translate_desktop_element_wrap  #google_translate_element {
+   position: relative;
+   top: auto;
+   right: auto;
+   bottom: auto;
+   left: auto;
+   margin: 0;
+   padding: 0;
+   border-radius: 0px;
+   background: transparent;
+   float: left;
+   }
+   #google_translate_desktop_element_wrap #google_translate_element:not(.showing ) {
+   display: inherit;
+   }
+   div#block-block-56 {
+   position: absolute;
+   top: 30px;
+   right: 30px;
+   text-align: right;
+   }
+   div#block-block-56 .fa-language {
+   color: #014982;
+   font-size: 24px;
+   transition: all ease-in .5s;
+   cursor: pointer;
+   }
+   div#block-block-56 .fa-language:hover {
+   color: #40c4ff;
+   }
+   div#block-block-56 a.contextual-links-trigger {
+   right: -30px;
+   position: absolute;
+   }
+</style>
+<script>
+   var gt_location;
+   jQuery(document).ready(function() {
+       jQuery('#google_translate_desktop_toggle').click(function(){
+           //console.log("desktop clicked: gt_location = " + gt_location);
+           if(gt_location == "mobile" || gt_location == undefined){
+               jQuery("#google_translate_element").detach().appendTo('#google_translate_desktop_element_wrap');
+           }
+           jQuery('#google_translate_desktop_toggle').toggleClass('active');
+           jQuery('#google_translate_desktop_element_wrap').toggleClass('hide');
+           gt_location = "desktop";
+           //console.log("gt_location = " + gt_location);
+       });
+   });
+</script>
+<span id="google_translate_desktop_toggle" class="fa fa-language active">&nbsp;</span>
+<div id="google_translate_desktop_element_wrap" class="hide">
+   <div id="google_translate_element"></div>
+</div>  </div>
+</div>
+  </div>
+        
+        <button type="button" class="navbar-toggle btn btn-nav" ><span class="text-only">Menu</span><span class="fas fa-bars"></span></button>
+                  <div class="region region-extra-nav">
+    <script src="//navbar.lacity.org/global_nav.js"></script>  </div>
+              </div>
+    </header>
+    
+    <div class="jumbotron">
+    <div class="pin-bottom">
+    <div class="container">
+      <h2>Mayor Garcetti supports allowing Airbnb's with COVID-19 Hosts and Guests</h2>
+    </div>
+  </div>
+  </div>
+
+    <!-- end home-only regions -->
+  <div class="body-container no-sidebar">
+    <div class="container">
+      <div class="row">
+                <!-- /#sidebar-first -->
+        
+        <section class="col-sm-12 body-wrapper">
+                              <a id="main-content"></a>
+                                                                                             <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    
+<div id="node-17516" class="node node-article node-promoted">          <span class="submitted">January 27, 2021</span>
+    <div class="content clearfix">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><p dir="ltr" style="text-align: center;"><em>Los Angeles Mayor Eric Garcetti</em></p>
+<p><strong>LOS ANGELES —</strong> Mayor Eric Garcetti today announced that after a constructive conversation with Joe Gebbia, Co-Founder of Airbnb Inc, he supports waiving the City's current ban on all short term dwelling rentals.</p>
+<p dir="ltr">The Mayor stated "Joe's perspective on this was essentially that the science is pretty conclusive on the low risks of COVID-19 immune individuals spreading this disease, and I have to say that I whole heartedly agree."</p>
+<p dir="ltr">Ronald Deleo, chief of legislative affairs for the Mayor plans to amend LA Executive Order 1051 to "provide an excemption to the current short term dwelling ban for all persons vaccinated against SARS COVID-19, or who have been infected by natural means and tested positive for antibodies. A fine of $1,000 will by assessed to all persons who falsify such a test or vaccination record."</p>
+<p dir="ltr">Disclaimer:<br>Mayor Garcetti's 2017 Mayoral Victory Committee received a $10,000 donation from Mr. Gebbia as per California Electoral Commission Records</p>
+</div>
+      </div>
+</div>  </div>
+  
+	<style>body.not-front .jumbotron {height: 50vw;background-image: url(https://www.lamayor.org/sites/g/files/wph446/f/key_image/9ab378fd-16fd-4b87-8898-88579c02d9b3%20%281%29.jpg)}</style>  
+  <div class="clearfix">
+        <div class="links"></div>
+         </div>
+</div>
+  </div>
+</div>
+  </div>
+ </section>
+              </div>
+    </div>
+  </div>
+    <footer class="footer">
+  <div class="footer-upper">
+    <div class="container">
+      <div class="row">
+                <div class="col-sm-7 left">   <div class="region region-footer-top-left">
+    <div id="block-mailchimp-signup-newsletter-01" class="block block-mailchimp-signup">
+
+    
+  <div class="content">
+    <form class="mailchimp-signup-subscribe-form" action="/mayor-garcetti-establishes-tom-labonge-summit-griffith-park" method="post" id="mailchimp-signup-subscribe-block-newsletter-01-form" accept-charset="UTF-8"><div><div class="mailchimp-signup-subscribe-form-description"></div><div id="mailchimp-newsletter-e8e4e61e86-mergefields" class="mailchimp-newsletter-mergefields"><div class="form-item form-type-textfield form-item-mergevars-EMAIL">
+  <label for="edit-mergevars-email">Email Address <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" id="edit-mergevars-email" name="mergevars[EMAIL]" value="" size="25" maxlength="128" class="form-text required" />
+</div>
+<div class="form-item form-type-textfield form-item-mergevars-MMERGE22">
+  <label for="edit-mergevars-mmerge22">Zip Code </label>
+ <input type="text" id="edit-mergevars-mmerge22" name="mergevars[MMERGE22]" value="" size="25" maxlength="128" class="form-text" />
+</div>
+</div><input type="hidden" name="form_build_id" value="form-hF5iM3yXz0iGjiAvSgTRoltB5a_5S3iUZbhKFskmykA" />
+<input type="hidden" name="form_id" value="mailchimp_signup_subscribe_block_newsletter_01_form" />
+<input type="hidden" name="cck_multiple_field_remove_fields" value="field_before_slab|field_after_slab" />
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Get Updates" class="form-submit" /></div></div></form>  </div>
+</div>
+  </div>
+ </div>
+                        <div class="col-sm-5 right">   <div class="region region-footer-top-right">
+    <div id="block-block-66" class="block block-block social-icons">
+
+    
+  <div class="content">
+    <ul class="menu nav social">
+                                      <li class="c-menu-social-links__item">
+        <a class="c-menu-social-links__item fab fa-facebook" href="https://www.facebook.com/mayorofla"><span>Facebook</span></a>
+              </li>
+                                  <li class="c-menu-social-links__item">
+        <a class="c-menu-social-links__item fab fa-instagram" href="https://www.instagram.com/mayorofla/"><span>Instagram</span></a>
+              </li>
+                                  <li class="c-menu-social-links__item">
+        <a class="c-menu-social-links__item fab fa-twitter" href="https://twitter.com/mayorofla"><span>Twitter</span></a>
+              </li>
+                                  <li class="c-menu-social-links__item">
+        <a class="c-menu-social-links__item fab fa-youtube" href="http://youtube.com/mayorofla"><span>Youtube</span></a>
+              </li>
+                                  <li class="c-menu-social-links__item">
+        <a class="c-menu-social-links__item fab fa-reddit" href="https://www.reddit.com/user/Eric_Garcetti/"><span>Reddit</span></a>
+              </li>
+                                  <li class="c-menu-social-links__item">
+        <a class="c-menu-social-links__item fab fa-linkedin" href="https://www.linkedin.com/in/ericgarcetti/"><span>LinkedIn</span></a>
+              </li>
+        </ul>  </div>
+</div>
+  </div>
+ </div>
+              </div>
+    </div>
+  </div>
+      <div class="footer-lower section">
+        <div class="container">
+          <div class="row">
+                        <div class="col-sm-4 left">   <div class="region region-footer-left">
+    <div id="block-block-1" class="block block-block">
+
+    
+  <div class="content">
+    <div class="office-contact">
+ <p><big><strong>Mayor Eric Garcetti</strong></big><br>
+        <em>City of Los Angeles</em></p>
+
+<ul class="address">
+	<li class="location"><span class="fa fa-map-marker"></span><div> 200 N. Spring St.,<br />
+		Los Angeles, CA 90012</div></li>
+	<li class="phone nowrap"><span class="fa fa-phone"></span><div> +311</div></li>
+	<li class="email nowrap"><span class="fa fa-envelope"></span><div> mayor.helpdesk@lacity.org</div></li>
+</ul>
+</div>
+  </div>
+</div>
+  </div>
+ </div>
+                                    <div class="col-sm-4 left">   <div class="region region-footer-center">
+    <div id="block-block-26" class="block block-block">
+
+    
+  <div class="content">
+    <script>
+jQuery(document).ready(function() { 
+jQuery('.media-links a[href*=youtube]').prepend('<i class="fa fa-youtube-play"></i>');
+var max_headline_length = 42;
+var curr_headline = jQuery(".jumbotron h2").html();
+var curr_headline_length = jQuery(".jumbotron h2").text().length;
+//console.log(curr_headline);
+  if (curr_headline_length >= max_headline_length){
+ 	 jQuery('div.jumbotron h2').addClass('smaller');
+ }
+})
+jQuery('.jumbotron h2').contents().filter(function(){
+    return this.nodeType == 3 // Text node
+}).each(function(){
+    this.data = this.data.replace('Amy Elaine Wakeland', 'Amy\u00a0Elaine\u00a0Wakeland');
+});
+</script>
+
+<style>
+
+@media (min-width: 767px) {
+  #block-menu-block-12 {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) {
+  .desktop-map {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .mobile-map {
+    display: none;
+  }
+}
+a, p a, input a, text area a {
+    color: #2277BB;
+}
+.category > .field-collection-view {
+    margin-bottom: 0px !important;
+}
+.field-collection-item-field-accomplishments>.content {
+    padding: .75em .75em 0 2.25em !important;
+}
+.cat-hero {
+    margin-top: 30px  !important;
+}
+
+.cat-hero:first-of-type {
+    margin-top: 0px  !important;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+   font-weight: 900;
+}
+
+div#block-views-feature-slideshow-block {
+    display: none;
+}
+/* Add to Utilities */
+.flush-top {
+  margin-top: 0; 
+}
+.flush-bottom {
+  margin-bottom: 0; 
+}
+@media only screen and (max-width: 767px) {
+  .copyright {
+    text-align: left;
+  }
+}
+.parallax-mirror {
+    z-index: 1 !important;
+}
+
+.parallax-window-1,
+.parallax-window-2 {
+  height: 25vw; 
+  min-height: 400px;
+  background: transparent;
+  position: relative; 
+  margin: 30px 0; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.parallax-window-1{
+  background-image: url(/sites/g/files/wph446/f/6G1A2517A-WIDE.jpg);
+}
+.parallax-window-2{
+  background-image: url(/sites/g/files/wph446/f/about-inaug-1_0.jpg);
+}
+.parallax-text {
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  z-index: 9; 
+  font-size: 48px; 
+  line-height: 1.33; 
+  text-shadow: 0 0 20px rgba(0,0,0,.5);
+}
+.pull-quote {
+  width: 50%; 
+  text-transform: uppercase;
+  font-size: 27px; 
+  font-weight: 900; 
+  font-style: italic; 
+  line-height: 1.2; 
+  margin-right: 30px; 
+  margin-bottom: 10px; 
+  float: left; 
+}
+
+@media (max-width: 767px) {
+  .parallax-window,
+  .parallax-window-2 {
+    height: 50vw;
+  }
+  .parallax-text {
+    font-size: 36px; 
+  }
+  .pull-quote {
+    width: 100%; 
+    margin-right: 0 ; 
+  }
+}
+.parallax-window-1, .parallax-window-2 {
+    height: 400px !important; 
+/* vw failing here */
+}
+ a.clear-button {
+    z-index: 100 !important;
+}
+.main-header.fixed {
+    z-index: 995 !important;
+}
+
+.section.section-insta {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.section.section-project-hub {
+    padding-top: 1em;
+    padding-bottom: 0;
+}
+@media (min-width: 1200px) {
+  div.jumbotron h2.smaller {
+    font-size: 38px;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  iframe.embed-responsive-item {
+    height: 1200px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .main-header.fixed {
+      width: 100%;
+      position: fixed;
+      z-index: 1001;
+      top: 0;
+      background: rgba(255,255,255,.85);
+  }
+  body.admin-menu  .main-header.fixed {
+      top: 30px;
+  }
+   .main-header.fixed .region-top-navigation {
+      background: transparent;
+  }
+}
+ul.area-reps {
+  list-style: none;
+  margin: 2em 0;
+  padding: 0;
+}
+ul.area-reps li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul.area-reps li a {
+  color: #014982 !important;
+}
+body.page-media-press-releases .jumbotron {
+    background-image: url(//www.lamayor.org/sites/g/files/wph446/f/new_seal.png) !important;
+
+}
+/* ABOUT MENU */
+.menu-name-menu-about-language-switcher {
+   margin: 0 0 30px;
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  position: relative; 
+}
+.menu-name-menu-about-language-switcher ul.menu.nav li {
+  display: inline-block; 
+  margin-left: 0; 
+}
+@media only screen and (min-width: 768px) {
+  .menu-name-menu-about-language-switcher ul.menu.nav li {
+    border-left: solid 1px #ccc;
+  }
+  .menu-name-menu-about-language-switcher ul.menu.nav li:first-child {
+    border-left: none; 
+  }
+  .menu-name-menu-about-language-switcher ul.menu.nav li:first-child a {
+    padding-left: 0; 
+  }
+}
+@media only screen and (max-width: 767px) {
+.menu-name-menu-about-language-switcher ul.menu.nav li a {
+    border: solid 1px; 
+  }
+}
+
+/* AUTO CLEAR ROWS */
+@media (min-width:1200px){
+    .auto-clear .col-lg-1:nth-child(12n+1){clear:left;}
+    .auto-clear .col-lg-2:nth-child(6n+1){clear:left;}
+    .auto-clear .col-lg-3:nth-child(4n+1){clear:left;}
+    .auto-clear .col-lg-4:nth-child(3n+1){clear:left;}
+    .auto-clear .col-lg-6:nth-child(odd){clear:left;}
+}
+@media (min-width:992px) and (max-width:1199px){
+    .auto-clear .col-md-1:nth-child(12n+1){clear:left;}
+    .auto-clear .col-md-2:nth-child(6n+1){clear:left;}
+    .auto-clear .col-md-3:nth-child(4n+1){clear:left;}
+    .auto-clear .col-md-4:nth-child(3n+1){clear:left;}
+    .auto-clear .col-md-6:nth-child(odd){clear:left;}
+}
+@media (min-width:768px) and (max-width:991px){
+    .auto-clear .col-sm-1:nth-child(12n+1){clear:left;}
+    .auto-clear .col-sm-2:nth-child(6n+1){clear:left;}
+    .auto-clear .col-sm-3:nth-child(4n+1){clear:left;}
+    .auto-clear .col-sm-4:nth-child(3n+1){clear:left;}
+    .auto-clear .col-sm-6:nth-child(odd){clear:left;}
+}
+@media (max-width:767px){
+    .auto-clear .col-xs-1:nth-child(12n+1){clear:left;}
+    .auto-clear .col-xs-2:nth-child(6n+1){clear:left;}
+    .auto-clear .col-xs-3:nth-child(4n+1){clear:left;}
+    .auto-clear .col-xs-4:nth-child(3n+1){clear:left;}
+    .auto-clear .col-xs-6:nth-child(odd){clear:left;}
+}
+
+
+</style>  </div>
+</div>
+<div id="block-views-projects-initiatives-list" class="block block-views hide">
+
+    <h2>Our Work</h2>
+  
+  <div class="content">
+    <div class="view view-projects view-id-projects view-display-id-initiatives_list project-hub view-dom-id-001070f114e46b8c0837df71cf151baa">
+            <div class="view-header">
+      <!--<div class="col-xs-12"><p>Short overview of current initiatives and an explanation of this page. </p></div>-->    </div>
+  
+  
+  
+      <div class="view-content">
+        <div>
+      
+          <a href="/projects/great-streets">Great Streets</a>    </div>
+  <div>
+      
+          <a href="/resources-residents-affected-aliso-canyon-natural-gas-leak">Resources for Residents Affected by the Aliso Canyon Natural Gas Leak</a>    </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+  </div>
+ </div>
+                                    <div class="col-sm-4 right">   <div class="region region-footer-right">
+    <div id="block-menu-menu-footer-menu" class="block block-menu">
+
+    
+  <div class="content">
+    <ul class="menu nav"><li class="first leaf"><a href="https://myla311.lacity.org/" title="311">311</a></li>
+<li class="leaf"><a href="https://data.lacity.org" title="City Data">City Data</a></li>
+<li class="leaf"><a href="https://www.lacity.org/your-government/government-information/city-directory" title="City Directory">City Directory</a></li>
+<li class="last leaf"><a href="http://neighborhoodinfo.lacity.org/" title="Neighborhood Info">Neighborhood Info</a></li>
+</ul>  </div>
+</div>
+  </div>
+ </div>
+                      </div>
+          <div class="row">
+                        <div class="col-sm-4 left">   <div class="region region-footer-bottom-left">
+    <div id="block-search-form" class="block block-search">
+
+    
+  <div class="content">
+    <form class="google-cse" action="/mayor-garcetti-establishes-tom-labonge-summit-griffith-park" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions--2"><input type="submit" id="edit-submit--2" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-uIKkMo_T_EIwtBM1kCt-wZxJzK0kL84AOLlBDabZjP8" />
+<input type="hidden" name="form_id" value="search_block_form" />
+<input type="hidden" name="cck_multiple_field_remove_fields" value="field_before_slab|field_after_slab" />
+</div>
+</div></form>  </div>
+</div>
+  </div>
+ </div>
+                                    <div class="col-sm-8 right">   <div class="region region-footer-bottom-right">
+    <div id="block-block-2" class="block block-block">
+
+    
+  <div class="content">
+    <p class="copyright">© 2020. All rights reserved. &nbsp; <a href="/terms" title="disclaimer">Disclaimer</a>  |  <a href="/privacy" title="privacy">Privacy Policy</a></p>  </div>
+</div>
+  </div>
+ </div>
+                      </div>
+        </div>
+      </div>
+    </footer>
+</div>
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"1ace86b44a","applicationID":"48820951","transactionName":"bgNTZxBZX0FXUUQKCldJcFAWUV5cGVxfBwBmFlBUB2dHW1NF","queueTime":0,"applicationTime":129,"atts":"QkRQEVhDTE8=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+</html>
