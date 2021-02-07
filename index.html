@@ -3,4 +3,29 @@
 <title>Jack Botein</title>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
 </head>
+<body>
+<center>
+<div class="header">Jack Botein</div>
+
+<div class="menu" onclick="menu()">☰</div>
+<br>
+<div id="menuoptions"></div>
+</center>
+<script>
+function menu() {
+  document.getElementById("menuoptions").innerHTML = "<span>About Me</span><span>Recent Projects</span><span>Contact</span>";
+}
+</script>
+
+<style>
+
+span {
+  padding: 1vw;
+  background-color: silver;
+  margin-right: .75vw;
+  margin-left: .75vw;
+  border-radius: 1vw;
+}
+</style>
+</body>
 </html>
