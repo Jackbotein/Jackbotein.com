@@ -1,0 +1,61 @@
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+    <script>
+    // This example displays a marker at the center of Australia.
+// When the user clicks the marker, an info window opens.
+function initMap() {
+  const corona = { lat: 40.74189472377387, lng: -73.85109055552456 };
+  const sandspoint = { lat: 40.863770, lng: -73.709600 };
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 11,
+    center: sandspoint,
+  });
+  const contentString =
+    '<div id="content">' +
+    '<div id="siteNotice">' +
+    "</div>" +
+    '<h1 id="firstHeading" class="firstHeading" style="text-align: center;">Jesus Lopez Home</h1>' +
+    '<div id="bodyContent">' +
+    '<img src="https://ssl.cdn-redfin.com/photo/269/mbpaddedwide/394/genMid.2984394_3.jpg" style="width:100%;">'
+    ;
+      const contentString2 =
+    '<div id="content">' +
+    '<div id="siteNotice">' +
+    "</div>" +
+    '<h1 id="firstHeading" class="firstHeading" style="text-align: center;">Elalouf Home</h1>' +
+    '<div id="bodyContent">' +
+    '<img src="https://img-de.gtsstatic.net/reno/imagereader.aspx?imageurl=https%3A%2F%2Fmmsmedia.vht.com%2FMedia%2FPhotography%2FDEGI%2F1066782%2F854fa776-ee06-498e-9cf9-7c395feb36f6.jpg%3Fdate%3D2021-01-25&permitphotoenlargement=false&w=1600&fallbackimageurl=https%3A%2F%2Fstatic-ind-elliman-newyork-production.gtsstatic.net%2Fresources%2Fv_4_19_0_166%2Fsiteresources%2Fcommonresources%2Fimages%2Fnophoto%2Fde_website_holder_1600x600.jpg" style="width:100%;">'
+    ;
+  const infowindow = new google.maps.InfoWindow({
+    position: corona,
+    content: contentString,
+  });
+    const infowindow2 = new google.maps.InfoWindow({
+    position: sandspoint,
+    content: contentString2,
+  });
+  const marker = new google.maps.Marker({
+    position: corona,
+    map,
+    title: "Uluru (Ayers Rock)",
+  });
+    const marker2 = new google.maps.Marker({
+    position: sandspoint,
+    map,
+    title: "Uluru ( Rock)",
+  });
+  marker.addListener("click", () => {
+    infowindow.open(map, marker);
+  });
+    marker2.addListener("click", () => {
+    infowindow2.open(map, marker2);
+  });
+}
+</script>
