@@ -1,31 +1,93 @@
 <html>
 <head>
-<title>Jack Botein</title>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+<title>Jack Botein Web Development
+</title>
 </head>
-<body>
+<body style="margin:0;">
 <center>
-<div class="header">Jack Botein</div>
-
-<div class="menu" onclick="menu()">☰</div>
-<br>
-<div id="menuoptions"></div>
+  <div class="header">
+  <span>Jack Botein</span><span style="font-family:'Roboto', sans-serif;"> | Web Development</span>
+  </div>
+<button onclick="about()">About</button>
+<button onclick="pricing()">Pricing</button>
+<button onclick="contact()">Contact</button>
+<div id="bodyofsite"></div>
+<div class="footer">
+2021 Jack Botein Web Development LLC, All Rights Reserved.
+</div>
 </center>
 <script>
-function menu() {
-  document.getElementById("menuoptions").innerHTML = "<span>About Me</span><span>Recent Projects</span><span>Contact</span>";
+function about (){
+document.getElementById('bodyofsite').innerHTML = "<br><h1>About</h1><img src='https://www.jackbotein.com/webdevelopment/jackwebsitepic.png' style='width:50%;border-radius: 10px;'><div class='blocker' style='position:relative;width:100%;height:290px;margin-top:-270px;background-color:white;'></div><p style='margin-top:-270px;position:relative;text-align:left;margin-left:25px;margin-right:20px;font-size:130%'>Jack Botein Web Development was founded in 2021 by Jack Botein, a high school student from Boston, Massachusetts. Jack has a passion for coding that led him to begin applying knowledge to building tailor made websites for a diverse portfolio of clients. From college professors to local businesses, Jack has wide experience in creating websites for types of clients. In addition to web development, Jack is a competitive runner, and perennial Model UN delegate.</p> ";
+loadtracker();
+}
+
+function pricing (){
+document.getElementById('bodyofsite').innerHTML = "<br><h1>Pricing</h1><p style='text-align:left;margin-left:25px;margin-right:20px;font-size:130%'>Jack Botein Web Development's pricing is truly simple: $50 upon website completion + $12/year of website registration. For context, this one time $50 fee is less than 10% the ANNUAL fee of Wix Premium.</p> ";
+loadtracker();
+}
+
+function contact (){
+document.getElementById('bodyofsite').innerHTML = "<br><h1>Contact</h1><iframe src='https://jackbotein.github.io/newparisbakery/backend/form' style='margin-top:-70px;border:0px #ffffff none;' name='myiFrame' scrolling='no' frameborder='1' marginheight='0px' marginwidth='0px' height='400px' width='600px' allowfullscreen></iframe>";
+loadtracker();
 }
 </script>
-
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Roboto&display=swap');
 
-span {
-  padding: 1vw;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.header {
+  font-family: 'Bungee Outline', cursive;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  background-color: black;
+}
+
+button {
+  margin-top: 10px;
+  font-size: 25px;
+  border-width:0;
+  padding: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: black;
   background-color: silver;
-  margin-right: .75vw;
-  margin-left: .75vw;
-  border-radius: 1vw;
+  border-radius: 5px;
+}
+
+.footer {
+  position: fixed;
+  overflow:hidden;
+  bottom:0;
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  background-color: black;
 }
 </style>
+<script type="text/javascript">
+var load = 0;
+
+function loadtracker() {
+document.getElementById('gform').onload = function() {
+    /*Execute on every reload on iFrame*/
+    load++;
+    if(load > 1){
+        /*Second reload is a submit*/
+        window.location.href = "https://www.jackbotein.com/";
+    }
+}
+}
+</script>
 </body>
 </html>
