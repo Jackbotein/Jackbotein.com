@@ -1,0 +1,157 @@
+<html>
+<head>
+<title>Professor Michael Parkin</title>
+  <link rel="stylesheet" href="https://www.jackbotein.com/webdevelopment/fullpage.css">
+<script src="https://www.jackbotein.com/webdevelopment/fullpage.js"></script>
+</head>
+<body onload="contact()">
+<div id="fullpage">
+  <div class="section">
+  <div class="navigation">
+<span><a href="#2">About</a></span>
+<span><a href="#3">Books</a></span>
+<span><a href="#4">Contact</a></span>
+</div>
+  <div class="logo">
+ Michael Parkin</div><div class="sublogo">Professor of Economics</div>
+  </div>
+    <div class="section">
+    <div class="slidecontent">
+    <div class="heading">
+    About</div><div class="content">
+    <div class="spacer" style="height:20px;"></div>
+Michael Parkin has been a member of the Economics Department at the University of Western Ontario since coming to Canada from the United Kingdom in 1975. After leaving school at the age of sixteen, he was a cost accountant in the English steel industry for five years, and in 1960 he began studying economics at the University of Leicester (to which he returned to accept an honorary doctorate in 2010). From 1970 to 1975 he was Professor of Economics at the University of Manchester. Starting in the late 1960s, he became a vigorous and influential proponent of the monetarist school of thought, which at the time was widely considered to be far from the mainstream of macroeconomics, especially in the UK. He quickly rose to be one of the global leaders of this movement, solidifying his reputation with the authoritative survey of inflation that he wrote with David Laidler, which placed the expectations-augmented Phillips Curve at the centre of inflation theory and that appeared in the Economic Journal in 1975. He is also the author or co-author (often with Dr Robin Bade) of eighty (80!) editions, in many languages and national editions, of two best-selling textbooks: Economics and Modern Macroeconomics.
+    </div>
+    <iframe width="80%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-81.39049530029297%2C42.924251753870685%2C-81.14364624023439%2C43.03978706404308&amp;layer=mapnik" style="border: 0px solid black;margin-top:20px;" class="map"></iframe></div><br/>
+    </div>
+    <div class="section"><div class="slidecontent">
+    <div class="heading">
+    Books</div><div class="content" style="margin-top:-100px;">
+       <center><div class="slide" data-anchor="slide1"><h1>Modern Macroeconomics</h1><img src="https://images-na.ssl-images-amazon.com/images/I/41r0pNJAqGL._SX388_BO1,204,203,200_.jpg" style="width:300px"><br><a href="https://www.amazon.com/gp/product/0133872645/ref=dbs_a_def_rwt_hsch_vapi_taft_p1_i1" target="blank"><button>
+       Buy Now
+       </button></a></div></center>
+              <center><div class="slide" data-anchor="slide1"><h1>Economics</h1><img src="https://images-na.ssl-images-amazon.com/images/I/41TLXj9b77L._SX389_BO1,204,203,200_.jpg" style="width:300px"><br><a href="https://www.amazon.com/gp/product/B00SZECM0E/ref=dbs_a_def_rwt_hsch_vapi_taft_p1_i3" target="blank"><button>
+       Buy Now
+       </button></a></div></center>
+    </div>
+    </div>
+    </div>
+    <div class="section">
+    <center><div id="contactform" style="position:absolute;top:5%;width:100%;"></div><div class="footer">
+    <a href="https://www.jackbotein.com/">2021 Michael Parkin, Designed by <a href="https://www.jackbotein.com/">Jack Botein</a>
+    </div></center></div></div>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.navigation {
+  position: absolute;
+  top: 2%;
+  width: 100%;
+  font-size: 60%;
+}
+
+span {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+  .section {
+  text-align:center;
+  font-size: 3em;
+}
+
+.logo {
+  font-family: 'Bungee Outline', cursive;
+  font-size: 80px;
+  line-height:100%;
+  color: white;
+}
+
+.sublogo {
+  font-size: 50px;
+  line-height:90%;
+  color: white;
+}
+
+.heading {
+  font-size: 100%;
+  font-family: 'Bungee Outline', cursive;
+  color: white;
+}
+
+.content {
+  margin-left: 10%;
+  margin-right: 10%;
+  color: white;
+  text-align: left;
+  font-size: 40%;
+}
+
+.map {
+    -webkit-filter: grayscale(100%);
+       -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+            filter: grayscale(100%);
+}
+
+.slidecontent {
+  position: absolute;
+  top: 60px;
+}
+
+.footer {
+position: absolute;
+bottom: 0%;
+color: white;
+text-align:center;
+width: 100%;
+padding: 8px;
+font-size: 15px;
+}
+
+button {
+  font-size: 30px;
+  border-color: transparent;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 5px;
+  color: black;
+}
+</style>
+<script>
+  new fullpage('#fullpage', {
+  sectionsColor: ['black', 'black', 'black', 'black'],
+});
+</script>
+<script>
+function contact (){
+document.getElementById('contactform').innerHTML = "<br><div class='heading' style='margin-bottom:25px;'>Contact</div><iframe src='https://www.jackbotein.com/webdevelopment/form' id='gform' style='margin-top:-70px;border:0px #ffffff none;' name='myiFrame' scrolling='no' frameborder='1' marginheight='0px' marginwidth='0px' height='400px' width='80%' allowfullscreen></iframe>";
+loadtracker();
+}
+</script>
+<script type="text/javascript">
+var load = 0;
+
+function loadtracker() {
+document.getElementById('gform').onload = function() {
+    /*Execute on every reload on iFrame*/
+    load++;
+    if(load > 1){
+        /*Second reload is a submit*/
+        window.location.href = "https://www.jackbotein.com/jamespease";
+    }
+}
+}
+</script>
+</body>
+</html>
