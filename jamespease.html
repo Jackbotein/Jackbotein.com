@@ -1,0 +1,154 @@
+<html>
+<head>
+<title>Professor James Pease</title>
+  <link rel="stylesheet" href="https://www.jackbotein.com/webdevelopment/fullpage.css">
+<script src="https://www.jackbotein.com/webdevelopment/fullpage.js"></script>
+</head>
+<body onload="contact()">
+<div id="fullpage">
+  <div class="section">
+  <div class="navigation">
+<span><a href="#2">About</a></span>
+<span><a href="#3">Books</a></span>
+<span><a href="#4">Contact</a></span>
+</div>
+  <div class="logo">
+  James Pease</div><div class="sublogo">Professor of Agricultural and Applied Economics</div>
+  </div>
+    <div class="section">
+    <div class="slidecontent">
+    <div class="heading">
+    About</div><div class="content">
+    <div class="spacer" style="height:20px;"></div>
+I conduct Extension and Outreach programs in the fields of natural resources (water quality), regional economic development, and farm policy. My research has long been focused on water quality protection, and has, more recently, emphasized the economics of irrigation recycling in the horticulture industry. I assist in the AAEC teaching mission by teaching an undergraduate course in Food and Agricultural Policy.
+    </div>
+    <iframe width="80%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-80.5785369873047%2C37.16756687845597%2C-80.32413482666017%2C37.293310828693805&amp;layer=mapnik" style="border: 0px solid black;margin-top:20px;" class="map"></iframe></div><br/>
+    </div>
+    <div class="section"><div class="slidecontent">
+    <div class="heading">
+    Books</div><div class="content" style="margin-top:-100px;">
+       <center><div class="slide" data-anchor="slide1"><h1>Agricultural Policy in the United States: Evolution and Economics</h1><img src="https://images-na.ssl-images-amazon.com/images/I/514lJYuGd+L._SY344_BO1,204,203,200_.jpg" style="width:300px"><br><a href="https://www.amazon.com/Agricultural-Routledge-Textbooks-Environmental-Economics/dp/1138809233/ref=sr_1_1?dchild=1&qid=1615566384&refinements=p_27%3AJames+W.+Pease&s=books&sr=1-1&text=James+W.+Pease" target="blank"><button>
+       Buy Now
+       </button></a></div></center>
+    </div>
+    </div>
+    </div>
+    <div class="section">
+    <center><div id="contactform" style="position:absolute;top:5%;width:100%;"></div><div class="footer">
+    <a href="https://www.jackbotein.com/">2021 James W. Pease</a>
+    </div></center></div></div>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.navigation {
+  position: absolute;
+  top: 2%;
+  width: 100%;
+  font-size: 60%;
+}
+
+span {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+  .section {
+  text-align:center;
+  font-size: 3em;
+}
+
+.logo {
+  font-family: 'Bungee Outline', cursive;
+  font-size: 80px;
+  line-height:100%;
+  color: white;
+}
+
+.sublogo {
+  font-size: 50px;
+  line-height:90%;
+  color: white;
+}
+
+.heading {
+  font-size: 100%;
+  font-family: 'Bungee Outline', cursive;
+  color: white;
+}
+
+.content {
+  margin-left: 10%;
+  margin-right: 10%;
+  color: white;
+  text-align: left;
+  font-size: 40%;
+}
+
+.map {
+    -webkit-filter: grayscale(100%);
+       -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+            filter: grayscale(100%);
+}
+
+.slidecontent {
+  position: absolute;
+  top: 60px;
+}
+
+.footer {
+position: absolute;
+bottom: 0%;
+color: white;
+text-align:center;
+width: 100%;
+padding: 8px;
+font-size: 15px;
+}
+
+button {
+  font-size: 30px;
+  border-color: transparent;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 5px;
+  color: black;
+}
+</style>
+<script>
+  new fullpage('#fullpage', {
+  sectionsColor: ['black', 'black', 'black', 'black'],
+});
+</script>
+<script>
+function contact (){
+document.getElementById('contactform').innerHTML = "<br><div class='heading' style='margin-bottom:25px;'>Contact</div><iframe src='https://www.jackbotein.com/webdevelopment/form' id='gform' style='margin-top:-70px;border:0px #ffffff none;' name='myiFrame' scrolling='no' frameborder='1' marginheight='0px' marginwidth='0px' height='400px' width='80%' allowfullscreen></iframe>";
+loadtracker();
+}
+</script>
+<script type="text/javascript">
+var load = 0;
+
+function loadtracker() {
+document.getElementById('gform').onload = function() {
+    /*Execute on every reload on iFrame*/
+    load++;
+    if(load > 1){
+        /*Second reload is a submit*/
+        window.location.href = "https://www.jackbotein.com/ronaldmelicher";
+    }
+}
+}
+</script>
+</body>
+</html>
