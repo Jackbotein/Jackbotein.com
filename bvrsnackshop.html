@@ -1,0 +1,150 @@
+<html>
+<head>
+<title>Jack Botein Web Development</title>
+  <link rel="stylesheet" href="https://www.jackbotein.com/webdevelopment/fullpage.css">
+<script src="https://www.jackbotein.com/webdevelopment/fullpage.js"></script>
+</head>
+<body onload="contact()">
+<div id="fullpage">
+  <div class="section">
+  <div class="alert">
+  Next Snack Shop day: <b style="padding: 3px;border-style:solid">May 3, 2021</b>
+  </div>
+  <div class="logo">
+  Beaver | Snack Shop</div><div class="sublogo">100% of profits support BVR Student Council</div>
+  <br>
+  <div class="logo">
+  ↓</div>
+  </div>
+    <div class="section">
+    <div class="alert">
+  Next Snack Shop day: <b style="padding: 3px;border-style:solid">May 3, 2021</b>
+  </div>
+    <div class="slidecontent">
+    <div class="heading">
+    About</div><div class="content">
+    <div class="spacer" style="height:20px;"></div>
+    Beaver | Snack Shop is the exclusive snack ordering system of the Beaver Country Day School. On the first Monday of every month, <b>students can order snacks on this site and pick them up on campus.</b> Our snacks are the best of the best, and by enjoying them your are supporting BVR student council and all the 💯 student events we run.
+    </div>
+    <iframe width="80%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-71.16896060295403%2C42.31645761705391%2C-71.16119829006493%2C42.32008700005906&amp;layer=mapnik" style="border: 0px solid black;margin-top:20px;" class="map"></iframe></div><br/>
+    </div>
+       <div class="section">
+    <div class="alert">
+  Next Snack Shop day: <b style="padding: 3px;border-style:solid">May 3, 2021</b>
+  </div>
+    <div class="slidecontent">
+    <div class="heading">
+    Snacks</div><div class="content">
+    <div class="spacer" style="height:20px;"></div>
+    Beaver | Snack Shop is the exclusive snack ordering system of the Beaver Country Day School. On the first Monday of every month, <b>students can order snacks on this site and pick them up on campus.</b> Our snacks are the best of the best, and by enjoying them your are supporting BVR student council and all the 💯 student events we run.
+    </div>
+    <iframe width="80%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-71.16896060295403%2C42.31645761705391%2C-71.16119829006493%2C42.32008700005906&amp;layer=mapnik" style="border: 0px solid black;margin-top:20px;" class="map"></iframe></div><br/>
+    </div></div>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
+
+.alert {
+  position: absolute;
+  top: 0;
+  padding: 15px;
+  font-size: 20px;
+  color: black;
+  background-color: white;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.navigation {
+  position: absolute;
+  top: 2%;
+  width: 100%;
+  font-size: 60%;
+}
+
+span {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+  .section {
+  text-align:center;
+  font-size: 3em;
+}
+
+.logo {
+  font-family: 'Bungee Outline', cursive;
+  font-size: 80px;
+  line-height:100%;
+  color: white;
+}
+
+.sublogo {
+  font-size: 40px;
+  line-height:120%;
+  color: white;
+}
+
+.heading {
+  font-size: 100%;
+  margin-top: 30px;
+  font-family: 'Bungee Outline', cursive;
+  color: white;
+}
+
+.content {
+  margin-left: 10%;
+  margin-right: 10%;
+  color: white;
+  text-align: left;
+  font-size: 50%;
+}
+
+.map {
+    -webkit-filter: grayscale(100%);
+       -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+            filter: grayscale(100%);
+}
+
+.slidecontent {
+  position: absolute;
+  top: 60px;
+}
+
+</style>
+<script>
+  new fullpage('#fullpage', {
+  sectionsColor: ['black', 'black', 'black', 'black'],
+});
+</script>
+<script>
+function contact (){
+document.getElementById('contactform').innerHTML = "<br><div class='heading' style='margin-bottom:25px;'>Contact</div><iframe src='https://www.jackbotein.com/webdevelopment/form' id='gform' style='margin-top:-70px;border:0px #ffffff none;' name='myiFrame' scrolling='no' frameborder='1' marginheight='0px' marginwidth='0px' height='400px' width='80%' allowfullscreen></iframe>";
+loadtracker();
+}
+</script>
+<script type="text/javascript">
+var load = 0;
+
+function loadtracker() {
+document.getElementById('gform').onload = function() {
+    /*Execute on every reload on iFrame*/
+    load++;
+    if(load > 1){
+        /*Second reload is a submit*/
+        window.location.href = "https://www.jackbotein.com/";
+    }
+}
+}
+</script>
+</body>
+</html>
