@@ -1,109 +1,65 @@
 <html>
 <head>
-<title>Scientific Models</title>
+<title>DamDash - BVR's Snack Delivery Service</title>
 </head>
-<body style="margin:0;width:100%;">
+<body style="margin:0;" onload="snack1()">
 <div class="header">
-<div class="title">Scientific Models</div>
-<div class="subtitle">By: Jack Botein</div>
+<div class="logo">DamDash</div>
+<hr>
+<div class="sublogo">Beaver's Snack Delivery Service</div>
 </div>
-<br>
-<center><span style="margin-left:1vw;margin-right:1vw;"><button onclick="topic1()">Model #1:<br>Stable Versus Unstable Atoms</button></span>
-<span style="margin-left:1vw;margin-right:1vw;"><button onclick="topic2()">Model #2:<br>Parts of an atom: proton, neutron, electron, nucleus</button></span>
-<span style="margin-left:1vw;margin-right:1vw;"><button onclick="topic3()">Model #3:<br>Physical vs chemical changes</button></span></center>
-<br>
-<div id="selectedtopic"></div>
-<div class="footer">
-2021 Honors Chemistry Scientific Models, Jack Botein.
-</div>
+<div id="activesnack" style="position:absolute;top:17vh;width:100%;text-align:center;"></div>
+<span onclick="snack1()" style="position:absolute;top:45vh;left:3vw;font-size:7vh;">⬅️</span>
+<span onclick="snack2()" style="position:absolute;top:45vh;right:3vw;font-size:7vh;">➡️</span>
+<div id="paymentwindow" style="position:absolute;top:85vh;width:100%;text-align:center;"></div>
 <script>
-function topic1() {
-  document.getElementById("selectedtopic").innerHTML = "<iframe src='https://www.jackbotein.com/scientificmodel1' style='border:0px #ffffff none;' name='myiFrame' scrolling='no' frameborder='1' marginheight='0px' marginwidth='0px' height='1775vh' width='100%' allowfullscreen></iframe>";
+function snack1() {
+document.getElementById("activesnack").innerHTML = "<center><div class='itemtitle'>Cape Cod Potato Chips</div><div class='itemprice'>$1.50</div><img src='https://www.freshdirect.com/media/images/product/grocery_44/gro_pid_4010716_z.jpg?lastModify=2016-03-11' style='width:50vh;margin-top:1.5vh;'><br><button onclick='payment()'>Order Now</button></center>";
 }
-
-function topic2() {
-  document.getElementById("selectedtopic").innerHTML = "<iframe src='https://www.jackbotein.com/scientificmodel2' style='border:0px #ffffff none;' name='myiFrame' scolling='no' frameborder='1' marginheight='0px' marginwidth='0px' height='1450vh' width='100%' allowfullscreen></iframe>";
-}
-
-function topic3() {
-  document.getElementById("selectedtopic").innerHTML = "<iframe src='https://www.jackbotein.com/scientificmodel3' style='border:0px #ffffff none;' name='myiFrame' scrolling='no' frameborder='1' marginheight='0px' marginwidth='0px' height='1550vh' width='100%' allowfullscreen></iframe>";
+function payment() {
+document.getElementById("paymentwindow").innerHTML = "iframe google form for buying potato chips";
 }
 </script>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+body {
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.header {
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
 
 button {
-  background-color: silver;
-  border-width: .25vw;
-  border-color: black;
-  padding: .5vw;
-  outline: 0;
-  border-radius: 1vw;
-  transition-duration: 1s;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 1vh;
+  font-size: 3vh;
 }
 
-button:hover {
-   background-color: gray;
+.logo {
+  font-size: 5vh;
 }
 
-.header {
-text-align: center;
-padding-top: 2vh;
-padding-bottom: 2vh;
-width: 100%;
-background-color: silver;
-color: black;
+hr {
+  width: 60%;
 }
-.title {
-font-size: 5vw; 
+.sublogo {
+  font-size: 2vh;
 }
 
-.subtitle {
-font-size: 1.5vw;
+.itemtitle {
+  font-size: 4vh;
 }
 
-.topicheading {
-  margin-top: 3vh;
-  width: 100%;
-  text-align:center;
-  font-size: 4vw;
+.itemprice {
+  font-size: 2vh;
+  margin-top: .5vh;
 }
-
-.description {
-margin-top: 1vh;
-margin-bottom: 3vh;
-font-size: 1.5vw;
-margin-left: 5%;
-margin-right: 5%;
-}
-
-.heading {
-text-align: center;
-font-size: 3vw;
-}
-
-.footer {
-  position:absolute;
-  position: fixed;
-  bottom: 0vh;
-  font-size:2vh;
-  color:black;
-  width:100%;
-  text-align:center;
-  padding-top: 1.5vh;
-  padding-bottom: 1.5vh;
-  background-color: silver;
-  transition-duration: 1s;
-}
-
-.footer:hover {
-  color: gray;
-}
-
-a {
-color: black;
-text-decoration: none;
-}
-
 </style>
 </body>
 </html>
