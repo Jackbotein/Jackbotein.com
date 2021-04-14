@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>DamDash - BVR's Snack Delivery Service</title>
+</head>
+<body style="margin:0;" onload="snack1()">
+<div class="header">
+<div class="logo">DamDash</div>
+<hr>
+<div class="sublogo">Beaver's Snack Delivery Service</div>
+</div>
+<div id="activesnack" style="position:absolute;top:17vh;width:100%;text-align:center;"></div>
+<span onclick="snack1()" style="position:absolute;top:45vh;left:3vw;font-size:7vh;">⬅️</span>
+<span onclick="snack2()" style="position:absolute;top:45vh;right:3vw;font-size:7vh;">➡️</span>
+<div id="paymentwindow" style="position:absolute;top:85vh;width:100%;text-align:center;"></div>
+<script>
+function snack1() {
+document.getElementById("activesnack").innerHTML = "<center><div class='itemtitle'>Cape Cod Potato Chips</div><div class='itemprice'>$1.50</div><img src='https://www.freshdirect.com/media/images/product/grocery_44/gro_pid_4010716_z.jpg?lastModify=2016-03-11' style='width:50vh;margin-top:1.5vh;'><br><button onclick='payment()'>Order Now</button></center>";
+}
+function payment() {
+document.getElementById("paymentwindow").innerHTML = "iframe google form for buying potato chips";
+}
+</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+body {
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.header {
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+  border-radius: 1vh;
+  font-size: 3vh;
+}
+
+.logo {
+  font-size: 5vh;
+}
+
+hr {
+  width: 60%;
+}
+.sublogo {
+  font-size: 2vh;
+}
+
+.itemtitle {
+  font-size: 4vh;
+}
+
+.itemprice {
+  font-size: 2vh;
+  margin-top: .5vh;
+}
+</style>
+</body>
+</html>
