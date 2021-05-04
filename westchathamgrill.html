@@ -5,11 +5,11 @@
 </head>
 <body onload="defautmenuslide()">
 <div class="header">
-<center>
   <span style="font-family: 'Vast Shadow', cursive;font-size:25px;position:absolute;left:15px;padding:0px;">West Chatham Grill</span>
-  <span>About</span>
-  <span><a href="#menu">Menu</a></span>
-  <span>Order Takeout</span>
+  <center>
+  <span style="position:relative;left:40px;">About</span>
+  <span style="position:relative;left:40px;"><a href="#menu">Menu</a></span>
+  <span style="position:relative;left:40px;"><a href="#ordertakeout">Order Takeout</a></span>
   </center>
 </div>
 
@@ -46,20 +46,46 @@ Restaurant Location
 </div>
 1615 Main St, Chatham, MA 02633
 <br>
-<br>
+<br id="menu">
 </div>
-<div id="menu"></div>
 <div class="menuheader">
 Menu
 </div>
-<div id="activemenuslide" style="width:100%;height:400px;">
+<div id="activemenuslide" style="width:100%;height:400px;margin-bottom:250px;">
 </div>
 <center>
 <div class="arrows">
-<span style="margin-right:25%;" onclick="defautmenuslide()">⬅️</span>
-<span style="margin-left:25%;" onclick="menuslidetwo()">➡️</span>
+<span style="margin-right:25%;font-size:40px;" onclick="defautmenuslide()">⬅️</span>
+<span style="margin-left:25%;font-size:40px;" onclick="menuslidetwo()">➡️</span>
 </div>
 </center>
+
+<center>
+<div class="menuheader" id="ordertakeout">
+Place a Takeout Order
+</div>
+<h2>Name:</h2>
+<input>
+<br>
+<br>
+<h2>Phone #:</h2>
+<input>
+<br>
+<br>
+<h2>Order:</h2>
+<input>
+<br>
+<br>
+<h2>Pickup Time:</h2>
+<input>
+<br>
+<br>
+<br>
+<button><h2>Submit</h2></button>
+</center>
+<br>
+<br>
+<br>
 <div class="footer">
 2021 West Chatham Grill, website by JBB Digital
 <br>
@@ -143,7 +169,7 @@ document.getElementById("activemenuslide").innerHTML = "<center><img src='https:
   position:relative;
   left:50%;
   top:-150px;
-  height:200px;
+  height:150px;
   margin-left:5%;
 }
 
@@ -177,7 +203,7 @@ a {
 
 .arrows {
   position:relative;
-  top:-100px;
+  top:-375px;
 }
 </style>
 </body>
