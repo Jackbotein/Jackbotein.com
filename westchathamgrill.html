@@ -54,8 +54,12 @@ Menu
 </div>
 <div id="activemenuslide" style="width:100%;height:400px;">
 </div>
-
-
+<center>
+<div class="arrows">
+<span style="margin-right:25%;" onclick="defautmenuslide()">⬅️</span>
+<span style="margin-left:25%;" onclick="menuslidetwo()">➡️</span>
+</div>
+</center>
 <div class="footer">
 2021 West Chatham Grill, website by JBB Digital
 <br>
@@ -64,6 +68,10 @@ Menu
 <script>
 function defautmenuslide() {
 document.getElementById("activemenuslide").innerHTML = "<center><img src='https://scontent-bos3-1.xx.fbcdn.net/v/t1.6435-9/134035083_511806253098930_9012788490948564008_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=973b4a&_nc_ohc=RLl449g6MYIAX8V6lgG&_nc_ht=scontent-bos3-1.xx&oh=0e28373de99ba6870a7fb430ab67533a&oe=60B50087' style='height:550px;'></center><br><br><br>";
+}
+
+function menuslidetwo() {
+document.getElementById("activemenuslide").innerHTML = "<center><img src='https://scontent-bos3-1.xx.fbcdn.net/v/t1.6435-9/134451073_511806263098929_7359811617917493575_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=973b4a&_nc_ohc=LlERlEOiuuwAX8o9O4Q&_nc_ht=scontent-bos3-1.xx&oh=72da9908755a5af053be5adde7a7d6bc&oe=60B73D0D' style='height:550px;'></center><br><br><br>";
 }
 </script>
 
@@ -165,6 +173,11 @@ a {
   font-size: 30px;
   margin-bottom:10px;
   font-family: 'Noto Serif', serif;
+}
+
+.arrows {
+  position:relative;
+  top:-100px;
 }
 </style>
 </body>
