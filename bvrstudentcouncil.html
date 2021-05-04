@@ -1,0 +1,147 @@
+<html>
+<head>
+<title>Beaver Student Council</title>
+</head>
+<body onload="leader1()">
+
+<div class="header">
+<center>
+<span style="color:#101c2c;font-family: 'IBM Plex Sans', sans-serif;font-size:30px">Beaver | Student Council</span>
+<br>
+<div class="nav">
+<span><a href="#about">About</a></span>
+<span><a href="#leadership">Leadership</a></span>
+<span>Your Opinions</span>
+</div>
+
+</center>
+</div>
+<div class="background">
+</div>
+<center>
+<div class="overlay">
+For Students, By Students
+</div>
+</center>
+<div class="spacer" style="height:200px"></div>
+<div class="heading" id="about">
+About
+</div>
+<div class="text">
+The Student Council is a group of students, elected by their classmates, who are concerned with the well-being of their school. They organize social events and work on solving problems that arise during the school year.
+</div>
+<br>
+<br>
+<div class="heading" id="leadership">
+Leadership
+</div>
+<center>
+<div id="activestudentcouncilmember">
+</div>
+<div class="arrows">
+<span style="font-size:30px;position:relative;left:-30%;" onclick="leader1()">⬅️</span>
+<span style="font-size:30px;position:relative;right:-30%;" onclick="leader2()">➡️</span>
+</div>
+</center>
+<div class="footer">
+2021 Beaver Student Council, All Rights Reserved.
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<script>
+function leader1() {
+document.getElementById("activestudentcouncilmember").innerHTML = "<img src='https://images1.privateschoolreview.com/photo/1122x864/13000/12908/beaver-country-day-school-Kia5W1.jpg' style='width:400px;'>";
+}
+
+function leader2() {
+document.getElementById("activestudentcouncilmember").innerHTML = "<img src='https://www.gstatic.com/prof/logo_assignments.svg' style='width:400px;'>";
+}
+</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap');
+
+
+body {
+  margin:0;
+  background-color:silver;
+  width:100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+  background-color:white;
+  padding:15px;
+}
+
+.nav {
+   margin-top: 22px; 
+   margin-bottom: 5px; 
+}
+
+span {
+  margin-right: 5px;
+  margin-left: 5px;
+  padding:5px;
+  border-radius:2px;
+  transition-duration: 1.5s;
+}
+
+span:hover {
+  background-color: silver;
+}
+
+.background {
+  background-image: url("https://images1.privateschoolreview.com/photo/1122x864/13000/12908/beaver-country-day-school-Kia5W1.jpg");
+  background-size: cover;
+  width:100%;
+  height:400px;
+}
+
+.overlay {
+  width:300px;
+  padding:10px;
+  background-color:white;
+  margin-top:-200px;
+  border-radius: 10px;
+}
+
+.footer {
+  width:100%;
+  padding:10px;
+  font-size:10px;
+  position:fixed;
+  bottom:0;
+  left:0;
+  background-color:white;
+  text-align: center;
+}
+
+.heading {
+  text-align:center;
+  font-size: 30px;
+  margin-bottom:10px;
+}
+
+.text {
+  margin-left:30px;
+  margin-right:30px;
+  font-size: 15px;
+}
+
+a {
+  text-decoration:none;
+  color:black;
+}
+
+.arrows {
+  position:relative;
+  top: -100px;
+  width:100%;
+}
+</style>
+</body>
+</html>
