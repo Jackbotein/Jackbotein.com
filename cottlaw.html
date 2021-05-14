@@ -1,0 +1,190 @@
+
+<html>
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.texasbar.com/am/favicon.ico" />
+<title>Cott Law Firm</title>
+</head>
+<body onload="samplecontactform()">
+
+<div class="header">
+<center>
+<span style="color:#101c2c;font-family: 'IBM Plex Sans', sans-serif;font-size:27px">Cott Law Firm</span>
+<br>
+<div class="nav">
+<span><a href="#about">About</a></span>
+<span><a href="#leadership">Who We Are</a></span>
+<span><a href="#feedback">Contact Us</a></span>
+</div>
+
+</center>
+</div>
+<div class="spacer" style="height:80px"></div>
+<div class="background">
+</div>
+<center>
+<div class="overlaybackground">
+</div>
+<div class="overlaytext">
+World Class Criminal Attorney
+</div>
+
+</center>
+<div class="spacer" style="height:170px" id="about"></div>
+<div class="heading">
+About
+</div>
+<div class="text" id="leadership">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</div>
+<br>
+<br>
+<hr style="border-color:#101c2c;;border-width:2px;" id="leadership">
+<br>
+<br>
+<div class="heading">
+Attorneys
+</div>
+<div class="subheading">
+The people ready to bring you to victory
+</div>
+<br>
+
+<div class="bio" style="text-align:center;">
+<img src="https://blog.texasbar.com/files/2011/10/JoeBoyle1.jpg">
+<div class="subtitle" style="margin-top:10px">
+<b>Stephen Cott</b>
+</div>
+</div>
+
+<div class="spacer" style="height:20px"></div>
+<hr style="border-color:#101c2c;;border-width:2px;">
+<br>
+<br>
+<div class="heading" id="feedback">
+Contact Us:
+</div>
+<center>
+<div id="feedbackform"></div>
+</center>
+    <br>
+<div class="footer">
+2021 Cott Law Firm
+</div>
+
+ <script>
+  function samplecontactform() {
+  document.getElementById('feedbackform').innerHTML = "<iframe id='gform' src='https://www.jackbotein.com/samplecontactform' style='border:0px #ffffff none;' name='myiFrame' autocomplete='off' scrolling='no' frameborder='1' marginheight='0px' marginwidth='0px' height='690px' width='100%' allowfullscreen></iframe>";
+loadtracker();
+}
+    </script>
+  <script type="text/javascript">
+var load = 0;
+
+function loadtracker() {
+document.getElementById('gform').onload = function() {
+    /*Execute on every reload on iFrame*/
+    load++;
+    if(load > 1){
+        /*Second reload is a submit*/
+        window.location.href = "https://www.jackbotein.com/alanaaronlaw";
+    }
+}
+}
+</script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap');
+
+
+body {
+  margin:0;
+  background-color:silver;
+  width:100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+  background-color:white;
+  padding-top:15px;
+  padding-bottom:15px;
+  position:fixed;
+  width:100%;
+  z-index: 1;
+}
+
+.nav {
+   margin-top: 22px; 
+   margin-bottom: 5px; 
+}
+
+span {
+  margin-right: 5px;
+  margin-left: 5px;
+  padding:5px;
+  border-radius:2px;
+  transition-duration: 1.5s;
+}
+
+span:hover {
+  background-color: silver;
+}
+
+.background {
+  background-image: url("https://www.hutchnews.com/storyimage/KS/20191223/NEWS/191229648/AR/0/AR-191229648.jpg");
+  background-size: cover;
+  width:100%;
+  height:400px;
+}
+
+.overlaybackground {
+  width:420px;
+  padding:45px;
+  background-color:white;
+  margin-top:-250px;
+  opacity: 0.7;
+}
+
+.overlaytext {
+  position:relative;
+  top:-60px;
+  font-size:30px;
+}
+
+
+.footer {
+  width:100%;
+  padding:10px;
+  font-size:10px;
+  position:fixed;
+  bottom:0;
+  left:0;
+  background-color:white;
+  text-align: center;
+}
+
+.heading {
+  text-align:center;
+  font-size: 30px;
+  margin-bottom:10px;
+}
+
+.subheading {
+  text-align:center;
+  font-size: 15px;
+  margin-bottom:15px;
+}
+
+.text {
+  margin-left:50px;
+  margin-right:50px;
+  font-size: 15px;
+}
+
+a {
+  text-decoration:none;
+  color:black;
+}
+
+</style>
+</body>
+</html>
