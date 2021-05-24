@@ -1,0 +1,194 @@
+<html>
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="https://bcdschool.org/wp-content/themes/beaver2018/images/favicons/favicon.ico" />
+<title>Austin County TX GOP</title>
+</head>
+<body onload="samplecontactform()">
+
+<div class="header">
+<center>
+<span style="color:#101c2c;font-family: 'IBM Plex Sans', sans-serif;font-size:27px">Austin County TX GOP</span>
+<br>
+<div class="nav">
+<span><a href="#about">About</a></span>
+<span><a href="#leadership">Who We Are</a></span>
+<span><a href="#feedback">Feedback</a></span>
+</div>
+
+</center>
+</div>
+<div class="spacer" style="height:80px"></div>
+<div class="background">
+</div>
+<center>
+<div class="overlaybackground">
+</div>
+<div class="overlaytext">
+Liberty, Opportunity
+</div>
+
+</center>
+<div class="spacer" style="height:170px" id="about"></div>
+<div class="heading">
+About
+</div>
+<div class="text" id="leadership">
+The Austin County GOP is an all-volunteer organization led by Charles Beers. It aims to advance conserative candidates that affirm American's rights to life and liberty. Texas leads America in job growth because government is restrained, and freedom is fostered. We provide a microphone to candidates supporting the afformentioned stances, with events and gatherings that rally voters and enable our candidates to win. The Republican Party of Texas is the affiliate of the Austin County GOP. It is chaired by Allen West and vice chaired by Cat Parks. It is headquartered in Austin. The RPT is legally considered to be a political action committee.
+</div>
+<br>
+<br>
+<hr style="border-color:#101c2c;;border-width:2px;" id="leadership">
+<br>
+<br>
+<div class="heading">
+Leadership
+</div>
+<div class="subheading">
+The people behind the Austin County TX GOP
+</div>
+<br>
+<center>
+<div class="leadership" style="width:100%;">
+<img src="https://media.istockphoto.com/vectors/happy-handsome-man-showing-thumbs-up-concept-illustration-in-cartoon-vector-id980239992?k=6&m=980239992&s=612x612&w=0&h=DArYe3TQt4hbrKN7MpL1MDiPLbH3TSaiibJdwIHdNw4=" style="width:200px;border-radius:50px;border-style:solid;border-width:5px;">
+<div class="titleppl" style="font-size:20px;margin-top:8px">
+Charles Beers, Chairman
+</div>
+</div>
+</center>
+<br>
+<br>
+<hr style="border-color:#101c2c;;border-width:2px;" id="leadership">
+<br>
+<br>
+<div class="heading" id="feedback">
+Feedback
+</div>
+<div class="text">
+The Austin County GOP is 100% member funded, staffed and driven and your feedback is of the upmost importance to us. Let us know how we are doing in our mission to advance conservative values:
+</div>
+<center>
+<div id="feedbackform"></div>
+</center>
+
+<div class="footer">
+2021 Austin County TX GOP | Website by <a href="jackbotein.com">Jack Botein</a>
+</div>
+
+  <script>
+  function samplecontactform() {
+  document.getElementById('feedbackform').innerHTML = "<iframe id='gform' src='https://www.jackbotein.com/samplecontactform' style='border:0px #ffffff none;' name='myiFrame' autocomplete='off' scrolling='no' frameborder='1' marginheight='0px' marginwidth='0px' height='690px' width='100%' allowfullscreen></iframe>";
+loadtracker();
+}
+    </script>
+  <script type="text/javascript">
+var load = 0;
+
+function loadtracker() {
+document.getElementById('gform').onload = function() {
+    /*Execute on every reload on iFrame*/
+    load++;
+    if(load > 1){
+        /*Second reload is a submit*/
+        window.location.href = "https://www.jackbotein.com/austincountygop";
+    }
+}
+}
+</script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap');
+
+
+body {
+  margin:0;
+  background-color:silver;
+  width:100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+  background-color:white;
+  padding-top:15px;
+  padding-bottom:15px;
+  position:fixed;
+  width:100%;
+  z-index: 1;
+}
+
+.nav {
+   margin-top: 22px; 
+   margin-bottom: 5px; 
+}
+
+span {
+  margin-right: 5px;
+  margin-left: 5px;
+  padding:5px;
+  border-radius:2px;
+  transition-duration: 1.5s;
+}
+
+span:hover {
+  background-color: silver;
+}
+
+.background {
+  background-image: url("https://www.snopes.com/uploads/2010/06/TX-US_Flags-760x452.jpg");
+  background-size: cover;
+  width:100%;
+  height:400px;
+}
+
+.overlaybackground {
+  width:350px;
+  padding:45px;
+  background-color:white;
+  margin-top:-250px;
+  opacity: 0.7;
+}
+
+.overlaytext {
+  position:relative;
+  top:-60px;
+  font-size:30px;
+}
+
+
+.footer {
+  width:100%;
+  padding:10px;
+  font-size:10px;
+  position:fixed;
+  bottom:0;
+  left:0;
+  background-color:white;
+  text-align: center;
+}
+
+.heading {
+  text-align:center;
+  font-size: 30px;
+  margin-bottom:10px;
+}
+
+.subheading {
+  text-align:center;
+  font-size: 15px;
+  margin-bottom:15px;
+}
+
+.text {
+  margin-left:50px;
+  margin-right:50px;
+  font-size: 15px;
+}
+
+a {
+  text-decoration:none;
+  color:black;
+}
+
+</style>
+</body>
+</html>
