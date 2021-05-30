@@ -3,7 +3,7 @@
 <head>
 <title>Chris Dempsey for State Auditor</title>
 </head>
-<body>
+<body onload="campaignupdatesiframe()">
 <div class="navigation">
 <div class="logo">
 <div class="highlightedlogosection">Chris</div>
@@ -108,6 +108,8 @@ Chris Dempsey, a well-know transportation advocate, called Bump a “remarkable 
 
 <!--footer-->
 <div class="footer">
+<div id="feedbackform"></div>
+<div class="spacer" style="height:90px"></div>
 <center><div class="disclaimer">Paid for by the Committee to Elect Chris Dempsey</div></center>
 <div class="endnote">© Copyright 2021. All rights reserved.</div>
 </div>
@@ -260,6 +262,28 @@ width:60px;
     padding-bottom:40px;
 }
 </style>
+
+<script>
+  function campaignupdatesiframe() {
+  document.getElementById('feedbackform').innerHTML = "<iframe id='gform' src='https://www.jackbotein.com/chrisdempseysignupform.html' style='border:0px #ffffff none;' name='myiFrame' scrolling='no' frameborder='1' marginheight='0px' marginwidth='0px' height='auto' width='100%' allowfullscreen></iframe>";
+loadtracker();
+}
+    </script>
+  <script type="text/javascript">
+var load = 0;
+
+function loadtracker() {
+document.getElementById('gform').onload = function() {
+    /*Execute on every reload on iFrame*/
+    load++;
+    if(load > 1){
+        /*Second reload is a submit*/
+        window.location.href = "https://www.jackbotein.com/chrisdempsey";
+    }
+}
+}
+</script>
+
 </body>
 </html>
 
