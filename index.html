@@ -1,266 +1,1043 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adeola Adeola &mdash; Portfolio</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="img/png/favicon.png">
-    <meta name="theme-color" content="#000000">
-    <meta name="description" content="Adeola Adeoti Portfolio">
-    <meta name="Keywords" content="Adeola Adeoti, Portfolio, Front-End Developer, Developer, Software Engineer, Nigeria, Lagos">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!--w -->
-    <meta property="og:site_name" content="adeolaadeoti.netlify.app">
-    <meta property="og:title" content="Adeola Adeoti Portfolio">
-    <meta property="og:description" content="I’m a design minded front-end developer based in Lagos, Nigeria.">
-    <meta property="og:image" itemprop="image" content="img/png/card.png">
-    <meta property="og:type" content="website">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PGZH8HT');</script>
+  <!-- End Google Tag Manager -->
 
-    <!--t -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@adeolaadeoti">
-    <meta name="twitter:creator" content="@adeolaadeoti">
-    <meta name="twitter:title" content="adeolaadeoti.netlify.app">
-    <meta name="twitter:description" content="I’m a design minded front-end developer based in Lagos, Nigeria.">
-    <meta name="twitter:image" content="img/png/card.png">
-    <meta name="twitter:app:country" content="NG">
+  <!-- Materialize - Compiled and minified CSS-->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+  <!-- Font Awesome Icon - CSS-->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!-- Custom Styles-->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <title>Varad Bhogayata | Software Developer</title>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-126939217-2');
+  </script>
+
+  <!-- Open Graph-->
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Varad Bhogayata | Software Developer" />
+  <meta property="og:description" content="Software Developer" />
+  <meta property="og:url" content="https://varadbhogayata.github.io/" />
+  <meta property="og:site_name" content="Varad Bhogayata | Software Developer" />
+  <meta property="article:publisher" content="https://varadbhogayata.github.io/" />
+  <meta property="og:image" content="https://varadbhogayata.github.io/examples/preview.JPG" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@varad_bhogayata" />
+  <meta name="twitter:title" content="Coder | Technofreak | Explorer | Minimalist | Humane" />
+  <meta name="twitter:description" content="Software Developer" />
+  <meta name="twitter:url" content="https://twitter.com/varad_bhogayata" />
+  <meta name="author" content="Varad Bhogayata" />
+  <meta name="description" content="Software Developer with a passion for backend development and artificial intelligence." />
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/assets/img/favicon/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="robots" content="index, follow" />
+  <!-- Google Site Verification for indexing -->
+  <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
 </head>
+
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  
+  <!-- Navigation Menu-->
+  <!-- Nav class 1 -->
+  <nav class="hide-on-small-only">
+    <ul class="side-nav fixed section table-of-contents">
 
-    <!-- preloader -->
-    <div class="preloader">
-        <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="302" height="85.573" viewBox="0 0 302 85.573"><g transform="translate(1 1.014)"><path d="M31.886,6.606h1.083a32.886,32.886,0,0,1,21.748,8.638V6.911a.335.335,0,0,1,.361-.361h9.777c.25,0,.361,0,.361.361V71.433c0,.25,0,.389-.361.389H55.078c-.25,0-.361-.139-.361-.389V63.1a31.719,31.719,0,0,1-21,8.666H30.942q-12,0-23.026-11.11A33.33,33.33,0,0,1,0,39.769v-.944A32,32,0,0,1,13.638,12.688,31.525,31.525,0,0,1,31.886,6.606ZM10.5,38.658v1.111c0,7.722,3.75,13.888,11.249,18.776A20.332,20.332,0,0,0,31.5,61.323H33.33A21.137,21.137,0,0,0,50.468,52.24a21.081,21.081,0,0,0,4.055-12.166V38.353c0-8.166-4.277-14.665-12.888-19.443A25,25,0,0,0,32.8,17.077h-.556A22,22,0,0,0,10.5,38.63Z" transform="translate(0 11.654)" stroke="#09f755" stroke-width="2"/><path d="M76.039.011h9.749a.335.335,0,0,1,.361.361V83.087c0,.25,0,.389-.361.389H76.039a.361.361,0,0,1-.389-.389V74.754A31.719,31.719,0,0,1,54.6,83.476H51.819q-12.054,0-23.026-11.11a33.33,33.33,0,0,1-7.944-21v-.944A32,32,0,0,1,34.488,24.287,31.525,31.525,0,0,1,52.736,18.2h1.111a32.858,32.858,0,0,1,21.72,8.638V.372a.361.361,0,0,1,.472-.361Zm-44.607,50.3v1.111c0,7.722,3.75,13.888,11.249,18.776a20.415,20.415,0,0,0,9.777,2.778h1.833A21.742,21.742,0,0,0,75.484,51.729V50.007q0-12.249-12.915-19.443a25,25,0,0,0-8.832-1.833H53.18A22,22,0,0,0,31.432,50.284Z" transform="translate(37.061)" stroke="#09f755" stroke-width="2"/><path d="M73.192,6.9h1.639a31.386,31.386,0,0,1,25,12.721,30.553,30.553,0,0,1,6.333,18.109v2.778c0,2.222-.194,3.305-.555,3.305H52.194v.194a21.248,21.248,0,0,0,7,11.8,21.081,21.081,0,0,0,14.36,5.694h.917A22.526,22.526,0,0,0,91.8,53.035h11.11a30.553,30.553,0,0,1-16.665,15.86,32.386,32.386,0,0,1-11.971,2.389h-.389q-17.082,0-27.775-15.86A33.858,33.858,0,0,1,42,38.953q0-16.832,15.471-27.442A31.914,31.914,0,0,1,73.192,6.9Zm-21,27.275,43.829.167v-.167a23.192,23.192,0,0,0-9.388-13.888,22.942,22.942,0,0,0-11.8-3.694H73q-10.082,0-17.693,9.971a23.914,23.914,0,0,0-3.111,7.61Z" transform="translate(74.655 12.276)" stroke="#09f755" stroke-width="2"/><path d="M111.9,20.93Q101.094,6.542,85.345,6.57H84.262a31.441,31.441,0,0,0-18.248,6.083A40.05,40.05,0,0,0,59.32,19.1L66.1,27.651a26.525,26.525,0,0,1,3.444-4.333,21.554,21.554,0,0,1,15.082-6.277h.583A25.22,25.22,0,0,1,94.039,18.9c8.61,4.861,12.888,11.36,12.888,19.443v1.444A21.22,21.22,0,0,1,102.872,52.2a21.109,21.109,0,0,1-17.165,9.221H83.9a20.581,20.581,0,0,1-9.777-2.778,27.774,27.774,0,0,1-4.416-3.389l-.417.75-8.333,5.416c7.11,6.86,14.582,10.221,22.47,10.221h2.777a32.358,32.358,0,0,0,16.026-4.777q15.3-11.11,15.3-26.886V38.317A31.664,31.664,0,0,0,111.9,20.93Z" transform="translate(105.443 11.69)" stroke="#09f755" stroke-width="2"/><path d="M116.305,60.3V71.718h-2.028q-30.358,1.75-36.663-24.3a61.082,61.082,0,0,0-.194-7.36c0-3.639.194-7.638.194-12V6.919c0-.25,0-.389.361-.389h9.777c.25,0,.361,0,.361.389v28l.75,10.693q3.027,15.165,21.165,15.637A21.665,21.665,0,0,0,116.305,60.3Z" transform="translate(137.616 11.619)" stroke="#09f755" stroke-width="2"/><path d="M116.388,6.606H117.5a32.886,32.886,0,0,1,21.748,8.638V6.911c0-.25,0-.361.361-.361h9.777c.25,0,.361,0,.361.361V71.433c0,.25,0,.389-.361.389h-9.777c-.25,0-.361-.139-.361-.389V63.1a31.719,31.719,0,0,1-21,8.666h-2.778q-12,0-23.026-11.11a33.33,33.33,0,0,1-7.916-21v-.944A31.941,31.941,0,0,1,98.168,12.577,31.5,31.5,0,0,1,116.388,6.606ZM95,38.658v1.111c0,7.722,3.75,13.888,11.11,18.776a20.248,20.248,0,0,0,9.749,2.778h1.833a21.97,21.97,0,0,0,21.192-21.387V38.353Q138.886,26.1,126,18.91a25,25,0,0,0-8.833-1.833h-.555A22,22,0,0,0,94.862,38.63Z" transform="translate(150.254 11.654)" stroke="#09f755" stroke-width="2"/></g></svg>
+      <li class="logo">
+        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
+          class="brand-logo grey-blue-text">
+          <img src="/assets/img/passport-new.jpg" class="circle img-responsive profile-pic" alt="avatar">
+        </a>
+      </li>
+
+      <li class="bold">
+        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>About</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Experience section" href="#experience"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-trending-up small"></i><span>Experience</span></a>
+      </li>
+
+      <li class="bold">
+        <!-- mdi-av-web small
+             mdi-av-my-library-books small-->
+        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
+            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+      </li>
+
+      <li class="bold">
+        <!--
+        ICONS:
+        mdi-action-assessment
+        mdi-social-poll
+        mdi-av-equalizer
+        -->
+        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-assessment small"></i><span>Skills</span></a>
+      </li>
+      
+      <li class="bold">
+        <!--
+        ICONS:
+        -->
+        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-school small"></i><span>Education</span></a>
+      </li>
+
+      <li class="bold">
+        <!-- 
+        1. mdi-communication-contacts
+        2. mdi-content-mail
+        3. mdi-communication-email
+        -->
+        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-mail small"></i><span>Contact</span></a>
+      </li>
+
+      <li class="bold">
+        <!--
+        ICONS:
+        1. mdi-action-description
+        2. mdi-file-folder
+        3. mdi-file-folder-open
+        4. mdi-file-attachment
+        5. mdi-file-folder-shared
+        -->
+        <!-- <a aria-label="Open Varad's resume in a new tab" href="#resume" target="_blank"
+          onclick="window.open('https://drive.google.com/file/d/1vYi-bMyIsZPve0x_clxY8xsDtiHiOMd3/view?usp=sharing')"
+          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
+        <a aria-label="Open Varad's resume in a new tab" href="https://varadbhogayata.github.io/assets/resume/Varad_Bhogayata_Resume.pdf" target="_blank"
+        class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>  
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Nav class 2 -->
+  <nav class="hide-on-large only trigger z-depth-1">
+    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
+      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    <div class="name-title">
+      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Varad
+        Bhogayata</a><span class="black-text">Software Developer</span>
     </div>
-    <div class="cursor"></div>
-    <div class="nav-container">
-        <div class="nav-icon">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+  </nav>
+
+  <!-- Nav class 3 -->
+  <nav class="hide-on-large only">
+    <ul id="slide-out" class="side-nav">
+      <li class="bold">
+        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>About</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Experience section" href="#experience"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-trending-up small"></i><span>Experience</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
+            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-assessment small"></i><span>Skills</span></a>
+      </li>
+
+      <li class="bold">
+        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-school small"></i><span>Education</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-mail small"></i><span>Contact</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Open Varad's Resume in a new tab"
+          href="https://drive.google.com/file/d/1B6MZ1z0-7NsefC3Lm_q-uhib28MTqpE9/view?usp=sharing" target="_blank"
+          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content-->
+  <main>
+    <!-- First Section: Heading lines and image -->
+    <section id="intro" class="section scrollspy full-height">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="col-md-9">
+          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
+            <div class="caption">
+              <h2>Hi, I'm <span class="teal">Varad Bhogayata.</span></h2>
+              <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
+              <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
+              <h5>Self-driven, quick starter, passionate programmer with a curious mind who enjoys solving a complex and challenging real-world problems.</h5>
+            </div>
+            <div class="social">
+              <a href="http://linkedin.com/in/varadbhogayata" target="_blank">
+                <button class="icon-btn linkedin">
+                  <i class="fa fa-linkedin"></i>
+                </button>
+              </a>
+              <a href="https://github.com/varadbhogayata/" target="_blank">
+                <button class="icon-btn github">
+                  <i class="fa fa-github"></i>
+                </button>
+              </a>
+
+              <!-- <a href="https://angel.co/u/varad_bhogayata" target="_blank">
+                <button class="icon-btn angellist">
+                  <i class="fa fa-angellist"></i>
+                </button>
+              </a> -->
+
+              <!-- <a href="http://linkedin.com/in/varadbhogayata" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+
+                  </span>
+              </a> -->
+            </div>
+            <div class='buttons'>
+              <a href="#about" class="readme">Read More</a>
+              <a href="#contact" class="contactme">Contact Me</a>
+            </div>
+          </div>
         </div>
-        <!-- nav main -->
-        <nav class="nav-main">
-            <div class="box-wrapper">
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
+      </div>
+    </section>
+
+    <!-- Second Section: About -->
+    <section id="about" class="section scrollspy">
+      <h3 class="page-title white-text teal">About</h3>
+      <div class="container flow-text">
+        <!-- <blockquote>
+          <h2>
+            A Software Developer with a passion for Backend Development and Artificial Intelligence.
+
+          </h2>
+        </blockquote> -->        
+        <p>
+          I am a Computer Science Grad Student at Arizona State University. I enjoy problem-solving and coding. Always strive to bring 100% to the work I do.
+
+          I have worked on technologies like Python, Django, Flask, MySQL, PostgreSQL, MongoDB, HTML5, CSS, Java, C++ during my bachelor's. I have 19 months of professional work experience which helped me strengthen my experience in Python, Flask, and Django.
+
+          I am passionate about developing complex applications that solve real-world problems impacting millions of users.
+        </p>
+        <p>
+          <ul>
+            <li><b>Languages:</b> Python, Java, JavaScript, C, C++, HTML/CSS, Bash</li>
+            <li><b>Databases:</b> MySQL, PostgreSQL, MongoDB</li>
+            <li><b>Libraries:</b> NumPy, Pandas, OpenCV</li>
+            <li><b>Frameworks:</b> Flask, Django, Node.js, Keras, TensorFlow, PyTorch, Bootstrap, Apache Beam</li>
+            <li><b>Tools & Technologies:</b> Git, Docker, AWS, GCP, Heroku, JIRA</li>
+          </ul>
+          
+        </p>
+          
+        <!-- <p>
+          
+          Detail-oriented Software Developer with professional experience in Backend Development, Machine Learning, Computer Vision. I am adept in Python, Django, Flask, SQL, Machine Learning, Computer Vision.           
+        </p> -->
+        <p>
+          Looking for an opportunity to work in a challenging position combining my skills in Software Engineering, which provides professional development, interesting experiences and personal growth.
+        </p>
+        <!-- <p>
+          Another Paragraph
+        </p>  -->
+        <!-- <p>
+        <strong>Current Focus</strong>:&nbsp;<a aria-label="Navigate to the Inclusive Design Patterns homepage"
+          href="https://www.smashingmagazine.com/inclusive-design-patterns/">Accessibility</a>&nbsp;//&nbsp;<a
+          aria-label="Navigate to the Full Stack React homepage"
+          href="https://www.fullstackreact.com/">React</a>&nbsp;//&nbsp;<a
+          aria-label='Navigate to the article "Scalable CSS"'
+          href="https://mrmrs.github.io/writing/2016/03/24/scalable-css/">Design Systems</a>
+        </p> -->
+      </div>
+    </section>
+
+
+    <!-- Third Section: Experience -->
+    <section id="experience" class="section scrollspy">
+      <h3 class="page-title white-text teal">Experience</h3>
+      <div class="container">
+
+        <!-- Latest Experience -->
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2">
+                <a href="https://www.zhiffy.com/" target="_blank"><img alt="Zhiffy logo"
+                    src="/assets/img/exp-zhiffy-logo-1.webp" class="responsive-img center-block" /></a>
+              </div>
+              <!-- <div class="col s12 m10"> -->
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title"><a href="https://www.zhiffy.com/" target="_blank"
+                      class="teal-text hoverline">Zhiffy</a></span>
+                </p>
+              </div>
             </div>
-            <img class="mobile-logo" src="./img/svg/adeola-logo-mobile.svg" alt="adeola logo mobile">
-            <div class="nav-main__content">
-                <!-- first content -->
-                <div class="nav-main__content--box">
-                    <h4 class="heading-4">on the web</h4>
-                    <div class="social-links">
-                        <div class="social-links--box">
-                            <a href="https://github.com/adeolaadeoti"><img src="./img/svg/github.svg" alt="github"></a>
-                            <a href="https://codepen.io/Adeoladev"><img src="./img/svg/codepen.svg" alt="codepen"></a>
-                            <a href="https://dribbble.com/adeolaadeoti"><img src="./img/svg/dribbble.svg" alt="dribbble"></a>
-                            <a href="https://www.behance.net/adeolaonig2191"><img src="./img/svg/behance.svg" alt="behance"></a>
-                        </div>
-                        <div class="social-links--box">
-                            <a href="https://twitter.com/adeolajs"><img src="./img/svg/twitter.svg" alt="twitter"></a>
-                            <a href="https://www.linkedin.com/in/adeoladev/"><img src="./img/svg/linkedin.svg" alt="linkedin"></a>
-                            <a href="https://www.instagram.com/adeolaadeoti_/"><img src="./img/svg/instagram.svg" alt="instagram"></a>
-                            <a href="https://www.pinterest.com/adeotiadeola/"><img src="./img/svg/pinterest.svg" alt="pinterest"></a>
-                        </div>
-                    </div>
-                    <a class="resume" href="./img/adeola-resume.pdf" target="_blank" rel="noopener noreferrer">Resume 📗</a>
-                </div>
-                <!-- second content -->
-                <div class="nav-main__content--box">
-                    <h4 class="heading-4">navigation</h4>
-                    <ul class="list">
-                        <li class="list__item"><a href="#home" class="list__link">Home</a></li>
-                        <li class="list__item"><a href="#projects" class="list__link">projects</a></li>
-                        <li class="list__item"><a href="#contact" class="list__link">contact</a></li>
-                    </ul>
-                </div>
-                
+            <div class="role brown-text text-darken-2">Software Engineer</div>
+            <ul>
+              <li>
+                Developed and managed the backend of an e-commerce platform using Flask, MongoDB, and AWS.
+              </li>
+              <li>
+                Worked on three web applications targeting customers, selling vendors, and admin users; built 50+ RESTful APIs with functionalities
+such as login/sign up, view a product, add a product to cart, checkout the order, etc.
+              </li>
+              <li>Improved the response time by 20% by refactoring the codebase and changing database design and queries.</li>
+              <li>Added a bulk upload feature which reduced the manual work of adding products into a database.</li>
+              <li>
+                <b>Tools:</b> Python, Flask, MongoDB
+              </li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <span>July 2020 - Nov 2020 | Hyderabad, India</span>
+          </div>
+        </div>
+
+        
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2">
+                <a href="https://www.meditab.com" target="_blank"><img alt="Meditab logo"
+                    src="/assets/img/exp-meditab-logo-500x500.jpg" class="responsive-img center-block" /></a>
+              </div>
+              <!-- <div class="col s12 m10"> -->
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title"><a href="http://meditab.com" target="_blank"
+                      class="teal-text hoverline">Meditab</a></span>
+                </p>
+              </div>
             </div>
-        </nav>
-        <!-- nav sub -->
-        <nav class="nav-sub">
-            <picture>
-                <source media="(max-width:37.5em)" srcset="./img/svg/adeola-logo-mobile.svg">
-                <img src="./img/svg/adeola-logo-desktop.svg" alt="adeola logo">
-            </picture>
-        </nav>
-    </div>
+            <div class="role brown-text text-darken-2">Programmer Analyst</div>
+            <ul>
+              <li>
+                Customized a tree-based optimization algorithm that separates drugs into distinct groups to maximize the concurrent execution of drug
+dispenser robots; improved an optimization algorithm that reduced the cycle-time of the automation process by 25%.
+              </li>
+              <li>
+                Devised a customized recursion algorithm to extend the functionality of the current environment to a multi-robot and multi-system
+environment
+              </li>
+              <li>
+                Built a modular video analytics app using Flask, OpenCV that tracks the location of each human in a multi-camera environment;
+utilized perspective transformation, object detection, and object tracking to find the location of a human.
+              </li>
+              <li>Increased the speed of the video analytics app by 20% by using a customized YOLOv3 algorithm to perform object detection and
+                DeepSORT algorithm for multi-object tracking.</li>
+              <li>
+                <b>Tools:</b> Python, Flask, OpenCV, Keras, Tensorflow, PyTorch
+              </li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <span>Dec 2018 - July 2019 | Ahmedabad, India</span>
+          </div>
+        </div>
 
-    <div class="smooth-scroll-wrapper">
-        <section class="content">
-            <!-- header -->
-            <header id="home" class="header">
-                <!-- hero -->
-                <div class="hero">
-                    <h5 class="heading-5">Hi there👋, I’m</h5>
-                    <!-- text video -->
-                    <div class="text-container">
-                        <video autoplay playsinline muted loop preload>
-                            <source src="https://d33wubrfki0l68.cloudfront.net/ab4c4ea31f1543825102ebf15a35080cdc1397ce/b8c4f/static/images/frontpage/hero/gradient.mp4" />
-                        </video>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 467 198"><path d="M466,197H0V0H466V197ZM274.7,77.95a34.549,34.549,0,0,0-13.2,2.437A30.015,30.015,0,0,0,251,87.7a32.323,32.323,0,0,0-6.863,11.213,41.6,41.6,0,0,0-2.288,14.137,41.042,41.042,0,0,0,2.288,14.025A32.389,32.389,0,0,0,251,138.25a30.015,30.015,0,0,0,10.5,7.312,36.962,36.962,0,0,0,26.4,0,30.015,30.015,0,0,0,10.5-7.312,32.393,32.393,0,0,0,6.862-11.175,41.045,41.045,0,0,0,2.287-14.025,41.6,41.6,0,0,0-2.287-14.137A32.326,32.326,0,0,0,298.4,87.7a30.015,30.015,0,0,0-10.5-7.312A34.553,34.553,0,0,0,274.7,77.95Zm-65.55,0a32.3,32.3,0,0,0-12.844,2.494,29.986,29.986,0,0,0-10.331,7.481,33.671,33.671,0,0,0-6.806,11.269A40.721,40.721,0,0,0,176.9,113.05a42.069,42.069,0,0,0,2.25,14.119,32.056,32.056,0,0,0,6.75,11.156,29.375,29.375,0,0,0,10.387,7.256A34.5,34.5,0,0,0,209.45,148a38.32,38.32,0,0,0,11.269-1.556,26.594,26.594,0,0,0,8.906-4.668,25.125,25.125,0,0,0,6.244-7.406,30.156,30.156,0,0,0,3.281-9.769H221.9a10.6,10.6,0,0,1-4.238,6.3,14.507,14.507,0,0,1-8.213,2.1,14.678,14.678,0,0,1-5.7-1.069,12.74,12.74,0,0,1-4.5-3.206,15.394,15.394,0,0,1-3.038-5.082,23.411,23.411,0,0,1-1.312-6.694h44.7v-5.7a43.423,43.423,0,0,0-2.006-13.631,30.206,30.206,0,0,0-6.018-10.594,25.5,25.5,0,0,0-9.619-6.806A34.072,34.072,0,0,0,209.15,77.95Zm-73.65,0a30.506,30.506,0,0,0-12.619,2.512A26.414,26.414,0,0,0,113.225,88a35.024,35.024,0,0,0-6.132,11.287,47.293,47.293,0,0,0,0,27.506,34.63,34.63,0,0,0,6.132,11.231,26.387,26.387,0,0,0,9.656,7.481A30.7,30.7,0,0,0,135.5,148a23.531,23.531,0,0,0,9.75-2.1,19.659,19.659,0,0,0,7.05-4.95v5.55H171.05V49H152.3V85a19.672,19.672,0,0,0-7.05-4.95A23.545,23.545,0,0,0,135.5,77.95ZM364.1,104.5a33.052,33.052,0,0,0-10.182,1.5,25.919,25.919,0,0,0-8.344,4.5,20,20,0,0,0-5.569,6.862,19.657,19.657,0,0,0-1.856,8.587,21.886,21.886,0,0,0,1.781,9,18.9,18.9,0,0,0,5.344,6.9,24.759,24.759,0,0,0,8.006,4.387,31.244,31.244,0,0,0,9.769,1.463,32.186,32.186,0,0,0,9.9-1.5c3.085-1,5.255-2.105,6.45-3.3v3.6h17.85V103.75a29.657,29.657,0,0,0-1.856-10.819,21.742,21.742,0,0,0-5.569-8.157,24.175,24.175,0,0,0-8.906-5.118A38.16,38.16,0,0,0,369.05,77.95a34.009,34.009,0,0,0-10.369,1.519,27.364,27.364,0,0,0-8.606,4.556,25.482,25.482,0,0,0-6.169,6.881A23.773,23.773,0,0,0,340.85,99.4h17.7a9.357,9.357,0,0,1,3.675-4.725A11.44,11.44,0,0,1,368.45,93.1c3.583,0,6.333.984,8.175,2.925a10.4,10.4,0,0,1,2.776,7.425v4.95a21.229,21.229,0,0,0-6.6-2.7A33.908,33.908,0,0,0,364.1,104.5Zm-297.15,0A33.049,33.049,0,0,0,56.769,106a25.919,25.919,0,0,0-8.344,4.5,20,20,0,0,0-5.569,6.862A19.657,19.657,0,0,0,41,125.95a21.888,21.888,0,0,0,1.781,9,18.9,18.9,0,0,0,5.343,6.9,24.76,24.76,0,0,0,8.006,4.387A31.244,31.244,0,0,0,65.9,147.7a32.178,32.178,0,0,0,9.9-1.5c3.086-1,5.256-2.105,6.45-3.3v3.6H100.1V103.75a29.657,29.657,0,0,0-1.856-10.819,21.742,21.742,0,0,0-5.569-8.157,24.174,24.174,0,0,0-8.906-5.118A38.16,38.16,0,0,0,71.9,77.95a34.006,34.006,0,0,0-10.369,1.519,27.367,27.367,0,0,0-8.606,4.556,25.473,25.473,0,0,0-6.169,6.881A23.775,23.775,0,0,0,43.7,99.4H61.4a9.357,9.357,0,0,1,3.675-4.725A11.44,11.44,0,0,1,71.3,93.1c3.583,0,6.333.984,8.176,2.925a10.4,10.4,0,0,1,2.775,7.425v4.95a21.231,21.231,0,0,0-6.6-2.7A33.921,33.921,0,0,0,66.95,104.5Zm347.1,19.2a11.36,11.36,0,0,0-8.325,3.375,11.544,11.544,0,0,0-3.375,8.475,11.941,11.941,0,0,0,3.3,8.55,11.482,11.482,0,0,0,8.4,3.45,11.233,11.233,0,0,0,8.325-3.45,11.8,11.8,0,0,0,3.375-8.55,11.544,11.544,0,0,0-3.375-8.475A11.36,11.36,0,0,0,414.05,123.7ZM313.4,49v97.5H332V49Zm53.851,85.05a15.939,15.939,0,0,1-8.4-2.1,7.167,7.167,0,0,1,.076-12.3,16.041,16.041,0,0,1,8.325-2.1,17.776,17.776,0,0,1,7.574,1.575A8.793,8.793,0,0,1,379.4,123.4v4.8a8.788,8.788,0,0,1-4.576,4.275A17.776,17.776,0,0,1,367.25,134.05Zm-297.15,0a15.933,15.933,0,0,1-8.4-2.1,7.166,7.166,0,0,1,.075-12.3,16.041,16.041,0,0,1,8.325-2.1,17.779,17.779,0,0,1,7.575,1.575A8.792,8.792,0,0,1,82.25,123.4v4.8a8.787,8.787,0,0,1-4.575,4.275A17.779,17.779,0,0,1,70.1,134.05Zm204.6-1.8a13.26,13.26,0,0,1-6.019-1.331,12.612,12.612,0,0,1-4.556-3.993,19.2,19.2,0,0,1-2.869-6.132,29.259,29.259,0,0,1-.956-7.744,30,30,0,0,1,.956-7.856,19.151,19.151,0,0,1,2.869-6.169,12.612,12.612,0,0,1,4.556-3.994,14.271,14.271,0,0,1,12.037,0,12.607,12.607,0,0,1,4.556,3.994,19.142,19.142,0,0,1,2.869,6.169,30,30,0,0,1,.956,7.856,29.265,29.265,0,0,1-.956,7.744,19.2,19.2,0,0,1-2.869,6.132,12.607,12.607,0,0,1-4.556,3.993A13.262,13.262,0,0,1,274.7,132.25Zm-135-.45a16.028,16.028,0,0,1-6.6-1.312,14.109,14.109,0,0,1-5.1-3.937,18,18,0,0,1-3.262-6,26.472,26.472,0,0,1,0-15.019A18.387,18.387,0,0,1,128,99.475a14.136,14.136,0,0,1,5.1-3.994,15.833,15.833,0,0,1,6.6-1.331,13.862,13.862,0,0,1,7.5,2.175,13.491,13.491,0,0,1,5.1,5.625V124a13.9,13.9,0,0,1-12.6,7.8Zm81.6-26.1H195.35c.846-4.181,2.448-7.36,4.762-9.45A13.242,13.242,0,0,1,209.3,93.1a11.115,11.115,0,0,1,8.7,3.525,13.746,13.746,0,0,1,3.3,9.074Z" transform="translate(0.5 0.5)" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/></svg>
-                        <span>adeola.</span>
-                    </div>
-                    <h4 class="heading-4 pri-color mt-s mb-s">DESIGNER + DEVELOPER 👨‍💻</h4>
-                    <p class="paragraph mb-m">I’m a design minded front-end developer<br>based in Lagos, Nigeria.</p>
-                    <a href="#contact" class="cta">hire me</a>
+        <!-- Experience 2 -->
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2">
+                <img alt="Mtag logo" src="/assets/img/exp-mtag-logo-250x250.jpg" class="responsive-img center-block" />
+
+              </div>
+
+              <!-- <div class="col s12 m10"> -->
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title"><a href="#experience" class="teal-text hoverline">Mtag
+                      Innovations</a></span>
+                </p>
+              </div>
+            </div>
+            <div class="role brown-text text-darken-2">Software Developer</div>
+            <ul>
+              <li>
+                Programmed a cloud-based web app using Flask and JavaScript aimed at storing, visualizing, and tracking temperature and humidity
+of each drug container to estimate the degradation of the drug.
+              </li>
+              <li>
+                Created an alert system to send notifications and emails when the parameters exceed the threshold.
+              </li>
+              <li>
+                <b>Tools:</b> Python, Flask, JavaScript
+              </li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <span>July 2018 - Nov 2018 | Ahmedabad, India</span>
+          </div>
+        </div>
+
+        <!-- Experience 3 -->
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2">
+                <a href="https://www.cignex.com" target="_blank"><img alt="Cignex logo"
+                    src="/assets/img/exp-cignex-logo.png" class="responsive-img center-block" /></a>
+              </div>
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title"><a href="https://www.cignex.com" target="_blank"
+                      class="teal-text hoverline">CIGNEX
+                      Datamatics </a></span>
+                </p>
+              </div>
+            </div>
+            <div class="role brown-text text-darken-2">Project Trainee</div>
+            <ul>
+              <li>
+                Designed a library management system for a local library, where we undertook activities like requirement
+                elicitation, preparing Data Flow
+                and Entity-Relationship diagrams.
+              </li>
+              <li>
+                Delivered a solution for a POC involving Automatic Financial Document Classifier using Natural Language
+                Processing and Support Vector
+                Machines with 96% accuracy on the company’s data.
+              </li>
+              <li>
+                <b>Tools:</b> Python, Scikit-learn, NLTK
+              </li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <span>June 2017 - July 2017 | Ahmedabad, India</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Fourth Section: Projects -->
+    <section id="projects" class="section scrollspy">
+      <h3 class="page-title white-text teal">Projects</h3>
+      <div class="container">
+        <div class="row">
+
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="music streaming app" src="/assets/img/project-music-player.png" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Music Player Web-App<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  A music streaming web app based on Django
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> Django, HTML, CSS, Bootstrap, SQLite, AWS S3, Heroku</li>
+                  <li>Register/login to the web app(with OAuth-based Google Sign-In).</li>
+                  <li>Search and filter songs based on language and singer.</li>
+                  <li>Create multiple playlists and add/remove songs to/from playlist.</li>
+                  <li>Scroll through recently played/viewed songs.</li>
+
+
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit " href="https://galvanic-music.herokuapp.com/" target="_blank" data-position="top"
+                    data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/music-player"
+                    target="_blank" data-position="top" data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
                 </div>
-            </header>
+              </div>
+            </div>
+          </div>
 
-            <main>
-                <!-- project section -->
-                <section id="projects" class="project">
-                    <h5 class="heading-5 sec-color mb-s">featured projects &mdash;</h5>
-                    <h2 class="heading-2">Stuff I’ve worked on 📁</h2>
-                    <div class="project-box__wrapper">
-                        <div class="project-box">
-                            <div class="project-box__link">
-                                <a href="https://github.com/adeolaadeoti/raba-exchange-rate" target="_blank" rel="noopener noreferrer"><img src="./img/svg/github.svg" alt="github logo"></a>
-                                <a href="https://raba.netlify.app" target="_blank" rel="noopener noreferrer"><img src="./img/svg/link.svg" alt="link icon"></a>
-                            </div>
-                            <div class="project-box__content">
-                                <h3 class="heading-3 mb-l">raba<br>exchange.</h3>
-                                <h5 class="heading-5">API &nbsp; HTML/SCSS &nbsp; JS</h5>
-                            </div>
-                        </div>
-                        <div class="project-box">
-                            <div class="project-box__link">
-                                <a href="https://github.com/adeolaadeoti/safarika" target="_blank" rel="noopener noreferrer"><img src="./img/svg/github.svg" alt="github logo"></a>
-                                <a href="https://safarika.netlify.app" target="_blank" rel="noopener noreferrer"><img src="./img/svg/link.svg" alt="link icon"></a>
-                            </div>
-                            <div class="project-box__content">
-                                <h3 class="heading-3 mb-l">Safarika<br>Adventure.</h3>
-                                <h5 class="heading-5">HTML/SCSS &nbsp; JS</h5>
-                            </div>
-                        </div>
-                        <div class="project-box">
-                            <div class="project-box__link">
-                                <a href="https://github.com/adeolaadeoti/gudfood-restaurant" target="_blank" rel="noopener noreferrer"><img src="./img/svg/github.svg" alt="github logo"></a>
-                                <a href="https://gudfood.netlify.app" target="_blank" rel="noopener noreferrer"><img src="./img/svg/link.svg" alt="link icon"></a>
-                            </div>
-                            <div class="project-box__content">
-                                <h3 class="heading-3 mb-l">Gudfood<br>Restaurant.</h3>
-                                <h5 class="heading-5">HTML/SCSS &nbsp; JS</h5>
-                            </div>
-                        </div>
-                        <div class="project-box">
-                            <div class="project-box__link">
-                                <a href="https://www.behance.net/gallery/99359631/LogoFolio" target="_blank" rel="noopener noreferrer"><img src="./img/svg/behance.svg" alt="behance logo"></a>
-                            </div>
-                            <div class="project-box__content">
-                                <h3 class="heading-3 mb-l">logo<br>Portfolio.</h3>
-                                <h5 class="heading-5">ai &nbsp; ps</h5>
-                            </div>
-                        </div>
-                        <div class="project-box">
-                            <div class="project-box__link">
-                                <a href="https://www.behance.net/gallery/99004155/Umeh-Group-Brand-Identity" target="_blank" rel="noopener noreferrer"><img src="./img/svg/behance.svg" alt="behance logo"></a>
-                            </div>
-                            <div class="project-box__content">
-                                <h3 class="heading-3 mb-l">umeh<br>Brand Identity.</h3>
-                                <h5 class="heading-5">ai &nbsp; ps</h5>
-                            </div>
-                        </div>
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="quiz app" src="/assets/img/project-quizup-logo-1.png" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Quiz Web-App<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  A quiz playing web app based on Django
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> Django, HTML, CSS, Bootstrap, SQLite, Heroku</li>
+                  <li>Register/login to the web app(with OAuth-based Google Sign-In).</li>
+                  <li>Play Quiz and see the leaderboard</li>
+
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit " href="https://quiz-up-app.herokuapp.com/" target="_blank" data-position="top"
+                    data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/QuizUp"
+                    target="_blank" data-position="top" data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 1. Django Project -->
+          <!-- <div class="col s12 m6 l6">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="django web app" src="/assets/img/project-library-logo.png" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Local Library Web-App<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  A web-app that creates an online catalog for a small local library, where users can browse available books and manage their accounts.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> HTML, CSS, Bootstrap, SQLite, Django, Heroku</li>
+                  <li>Users can view list and detail information for books and authors.</li>
+                  <li>Admin users can create and manage models.</li>
+                  <li>Librarians can renew reserved books.</li>
+
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit " href="https://django-local-lib.herokuapp.com" target="_blank" data-position="top"
+                    data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/django-local-library"
+                    target="_blank" data-position="top" data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- Flask Project -->
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="Screenshot of web app" src="/assets/img/project-blog-logo.jpg"
+                style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Blog Web-App<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  A simple and extensible blog web-app based on Flask.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title teal-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> HTML, CSS, Bootstrap, Flask, SQLAlchemy, Postgresql, Python</li>
+                  <li>Users can view posts and contact the admin via Contact Page.</li>
+                  <li>Admin can Add, Delete, Update posts.</li>
+
+
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit Blog website" href="https://flask-heroku-blog.herokuapp.com/" target="_blank" data-position="top"
+                    data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/flask-blog"
+                    target="_blank" data-position="top" data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- VQA -->
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="Screenshot of  web app" src="/assets/img/project-aim_bert-bias.png" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Visual Question Answering<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  An attention-based classification model that aims at generating an answer for a given input image.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title teal-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li>Incorporated Convolution Neural Networks (CNN) for extracting image features and Long Short Term
+                    Memory for extracting question
+                    embeddings.</li>
+                  <li>Tested the model on the COCO dataset, abstract scenes images, and got 69% overall accuracy on the
+                    VQA evaluation metric.</li>
+
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit the GitHub repo for  project"
+                    href="https://github.com/varadbhogayata/visual-question-answering" target="_blank"
+                    data-position="top" data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video Summarizer -->
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="Screenshot of  web app" src="/assets/img/computer-vision-v2-04.png" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Video Summarizer<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  A Seq2Seq model that generates a short summary of the given input video.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title brown-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li>Incorporated CNN to detect and classify objects in the video frames and Long Short Term Memory for
+                    generating a summary.</li>
+                  <li>Evaluated the model on MSVD (Microsoft Video Description Corpus) dataset; achieved 0.77, 0.71,
+                    0.52 scores respectively on ROGUE,
+                    BLEU, METEOR evaluation metrics.</li>
+
+                </ul>
+                <!-- TODO: UPLOAD THIS PROJECT ON GITHUB -->
+                <div class="card-action">
+                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/"
+                    target="_blank" data-position="top" data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image Generator -->
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="Screenshot of  web app" src="/assets/img/gan.jpg" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Image Generator<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  An image generator based on the concept of adversarial networks (GANs)
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title brown-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li>Developed system was tested on a human-face database and loss was calculated by comparing the PCAs
+                    of generated and original image.</li>
+                  <li>Calculated difference in PCA was less than 10%, depicting the successful generation of an image by
+                    the generator.</li>
+
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/"
+                    target="_blank" data-position="top" data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Head Counting System -->
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="Screenshot of  web app" src="/assets/img/Blog-Images-Forget-Machine-Learning-Humans-Still-Have-a-Lot-to-Learn-Part-II.jpg" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Head Counting System<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  A system that calculates the attendance of the class from a panoramic image of a live classroom.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title brown-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li>Used Singular Value Decomposition for image compression; applied various image processing
+                    techniques and morphological operations to
+                    detect the number of heads.</li>
+
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit the GitHub repo for  project"
+                    href="https://github.com/varadbhogayata/visual-question-answering" target="_blank"
+                    data-position="top" data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ************* -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Fifth Section: Skills -->
+    <section id="skills" class="section scrollspy">
+      <h3 class="page-title white-text teal">Skills</h3>
+      <div class="container">
+        <!-- Languages and Databases -->
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Languages and Databases</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/python-logo-1-300x300.jpg" class="responsive-img" />Python
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/html5-300x300.jpg" class="responsive-img" />HTML5
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/css3-300x300.jpg" class="responsive-img" />CSS3
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/mysql-logo-1-300x300.jpg" class="responsive-img" />MySQL
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/postgresql-logo.png" class="responsive-img" />PostgreSQL
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/shell-logo-1-300x300.jpg" class="responsive-img" />Shell Scripting
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Libraries</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/numpy-logo-1-500x500.jpg" class="responsive-img" />NumPy
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/pandas-logo-2-500x500.jpg" class="responsive-img" />Pandas
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/opencv-logo-1-500x500.jpg" class="responsive-img" />OpenCV
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/sk-learn-logo-1-500x500.jpg" class="responsive-img" />scikit-learn
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/matplotlib-logo-1-500x500.jpg" class="responsive-img" />matplotlib
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frameworks -->
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Frameworks</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/django-logo.webp" class="responsive-img" />Django
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/flask-logo.png" class="responsive-img" />Flask
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/bootstrap.png" class="responsive-img" />Bootstrap
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/keras-logo.png" class="responsive-img" />Keras
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/tensorflow-logo-1.png" class="responsive-img" />TensorFlow
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/pytorch-logo.png" class="responsive-img" />PyTorch
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Other -->
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Other</h4>
+            <div class="row text-center">
+
+
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/git.png" class="responsive-img" />Git
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/aws.png" class="responsive-img" />AWS
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/heroku.png" class="responsive-img" />Heroku
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- certifications -->
+        <!-- <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Certificates</h4>
+            <div class="row text-left">
+              <div class="container">
+                <div class="row">
+                  <div class="col s12 m6 l6">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="/assets/img/mooc-machine-learning-coursera-800x500.jpg">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title teal-text">Machine Learning (Stanford)</span>
+                      </div>
                     </div>
-                </section>
-                <!-- web section -->
-                <section class="web">
-                    <h5 class="heading-5 sec-color mb-s">More of my works &mdash;</h5>
-                    <h2 class="heading-2">On the Web 🌐</h2>
-                    <div class="web-box__wrapper">
-                        <div class="web-box">
-                            <a href="https://github.com/adeolaadeoti" target="_blank" rel="noopener noreferrer"><img src="./img/svg/github-web.svg" alt="github">github</a>
-                        </div>
-                        <div class="web-box">
-                            <a href="https://dribbble.com/adeolaadeoti" target="_blank" rel="noopener noreferrer"><img src="./img/svg/dribbble.svg" alt="dribbble">dribbble</a>
-                        </div>
-                        <div class="web-box">
-                            <a href="https://www.linkedin.com/in/adeoladev/" target="_blank" rel="noopener noreferrer"><img src="./img/svg/linkedin.svg" alt="linkedin">linkedin</a>
-                        </div>
-                        <div class="web-box">
-                            <a href="https://codepen.io/Adeoladev" target="_blank" rel="noopener noreferrer"><img src="./img/svg/codepen.svg" alt="codepen">codepen</a>
-                        </div>
-                        <div class="web-box">
-                            <a href="https://www.pinterest.com/adeotiadeola/" target="_blank" rel="noopener noreferrer"><img src="./img/svg/pinterest.svg" alt="pinterest">pinterest</a>
-                        </div>
-                        <div class="web-box">
-                            <a href="https://www.instagram.com/adeolaadeoti_/" target="_blank" rel="noopener noreferrer"><img src="./img/svg/instagram.svg" alt="instagram">instagram</a>
-                        </div>
-                        <div class="web-box">
-                            <a href="https://www.behance.net/adeolaonig2191" target="_blank" rel="noopener noreferrer"><img src="./img/svg/behance-web.svg" alt="behance">behance</a>
-                        </div>
-                        <div class="web-box">
-                            <a href="https://twitter.com/adeolajs" target="_blank" rel="noopener noreferrer"><img src="./img/svg/twitter.svg" alt="twitter">twitter</a>
-                        </div>
+                  </div>
+
+                  <div class="col s12 m6 l6">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="/assets/img/mooc-algorithms-stanford-2-800x500.jpg">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title teal-text">Algorithms (Stanford)</span>
+                      </div>
                     </div>
-                </section>
-                <!-- contact -->
-                <section id="contact" class="contact">
-                    <h5 class="heading-5 sec-color mb-s">contact &mdash;</h5>
-                    <h2 class="heading-2">look who’s here 😁</h2>
-                    <div class="contact-box__wrapper">
-                        <div class="contact-box">
-                            <h5 class="heading-5 sec-color mb-s">email📧</h5>
-                            <a href="mailto:adeolaonigegeara@gmail.com" target="_blank" rel="nofollow noopener noreferrer">adeolaonigegeara@gmail.com</a>
-                        </div>
-                        <div class="contact-box">
-                            <h5 class="heading-5 sec-color mb-s">phone🇳🇬</h5>
-                            <a href="tel:+2349066383763">+(234) 906 638 3763</a>
-                        </div>
-                    </div>
-                </section>
-            </main>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
 
-            <!-- footer -->
-            <footer class="footer">
-                <h5 class="heading-5">© 2020 Adeola Adeoti</h5>
-                <img src="./img/svg/recreate.svg" alt="recreate logo">
+      </div>
+    </section>
 
-            </footer>
+    <!-- Seventh Section: Education -->
+    <section id="education" class="section scrollspy">
+      <h3 class="page-title white-text teal">Education</h3>
+      <div class="container">
+        <div class="row">
+          <!-- Education -->
+          <div class="col s12 m6 l6">
+            <div class="card">
+              <div class="card-content">
+                <p>
+                  <span class="card-title"><a href="https://www.asu.edu/" target="_blank" class="teal-text hoverline">Arizona State University</a></span>
+                </p>
+                <p class="brown-text">Tempe, USA</p>
+                <p>
+                  <b>Degree: </b>Master of Science in Computer Science      
+                  <br>
+                  <b>CGPA: </b>4.0/4.0
+                </p>
 
-        </section>
-    </div>
-    
-    <script>
-        // distort scroll
-        const body = document.body,
-            scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
-            height = scrollWrap.getBoundingClientRect().height - '100px',
-            speed = 0.08;
+                <ul>
+                  <p>
+                    <b>Relevant Courseworks:</b>
+                  <ul>
+                    <li>Distributed Database Systems</li>
+                    <li>Cloud Computing</li>
+                    <li>Foundations of Algorithms</li>                    
+                  </ul>
+                  </p>
 
-        var offset = 0;
+                </ul>
+              </div>
+            </div>
 
-        body.style.height = Math.floor(height) + "px";
+            
+          </div>
+          <div class="col s12 m6 l6">
+            <div class="card">
+              <div class="card-content">
+                <p>
+                  <span class="card-title"><a href="https://ahduni.edu.in/academics/schools-centres/school-of-engineering-and-applied-science/" target="_blank" class="teal-text hoverline">School of Engineering and Applied Science, Ahmedabad
+                      University</a></span>
+                </p>
+                <p class="brown-text">Ahmedabad, India</p>
+                <p>
+                  <b>Degree: </b>Bachelor of Technology in Information and Communication Technology
+                  <br>
+                  <b>CGPA: </b>3.13/4.33
+                </p>
 
-        function smoothScroll() {
-            offset += (window.pageYOffset - offset) * speed;
+                <ul>
+                  <p>
+                    <b>Relevant Courseworks:</b>
+                  <ul>
+                    <li>Data Structures and Algorithms</li>
+                    <li>Database Management Systems</li>
+                    <li>Operating Systems</li>
+                    <li>Machine Learning</li>
+                    <li>Computer Vision</li>
+                  </ul>
+                  </p>
 
-            var scroll = "translateY(-" + offset + "px) translateZ(0)";
-            scrollWrap.style.transform = scroll;
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            callScroll = requestAnimationFrame(smoothScroll);
-        }
+    <!-- Eight Section: Contact -->
+    <section id="contact" class="section scrollspy full-height">
+      <h3 class="page-title white-text teal">Contact</h3>
+      <div class="container">
+        <p>
+          <a aria-label="Call Varad" data-position="top" data-tooltip="Call Varad"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i><a
+              aria-label="Call Varad">+14805722456</a></a>
+        </p>
+        <p>
+          <a aria-label="Email Varad" href="mailto:vbhogayata@gmail.com" target="_blank" data-position="top"
+            data-tooltip="Email Varad" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+              class="fa fa-envelope"></i><a aria-label="Email Varad" href="mailto:vbhogayata@gmail.com"
+              class="hoverline">vbhogayata@gmail.com</a></a>
+        </p>
+        <p>
+          <a aria-label="View Varad on GitHub" href="http://github.com/varadbhogayata" target="_blank"
+            data-position="top" data-tooltip="View Varad on GitHub"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
+              aria-label="Varad on Github" href="http://github.com/varadbhogayata" class="hoverline"
+              target="_blank">github.com/varadbhogayata</a></a>
+        </p>
+        <p>
+          <a aria-label="View Varad on LinkedIn" href="http://linkedin.com/in/varadbhogayata" target="_blank"
+            data-position="top" data-tooltip="View Varad on LinkedIn"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+              class="fa fa-linkedin"></i><a aria-label="Varad on LinkedIn" href="http://linkedin.com/in/varadbhogayata"
+              class="hoverline" target="_blank">linkedin.com/in/varadbhogayata</a></a>
+        </p>
+      </div>
+    </section>
+  </main>
 
-        smoothScroll();
-        const content = document.querySelector("section");
-        let currentPos = window.pageYOffset;
+  <!-- typed.js -->
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script type="text/javascript">
+    var typed = new Typed('.typing',{
+      strings: ["Pythonist", "Developer", "Fast Learner"],
+      loop: true,
+      typeSpeed: 80,
+      backSpeed: 40
+    });
+  </script>
 
-        const callDistort = function () {
-            const newPos = window.pageYOffset;
-            const diff = newPos - currentPos;
-            const speed = diff * 0.2;
 
-            content.style.transform = "skewY(" + speed + "deg)";
-            currentPos = newPos;
-            requestAnimationFrame(callDistort);
-        };
+  <!-- jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-        callDistort();
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
-    <script src="./index.js"></script>
+  <!-- Materialize - Compiled and minified JavaScript-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+  <script>
+    // Materialize - Initializers
+    $(document).ready(function () {
+      $(".scrollspy").scrollSpy()
+      // Initialize collapse button
+      $(".button-collapse").sideNav({
+        menuWidth: 190, // Default is 240
+        edge: "left", // Choose the horizontal origin
+        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      })
+    })
+  </script>
 </body>
+
 </html>
