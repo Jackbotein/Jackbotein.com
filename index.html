@@ -1,19 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="https://www.jackbotein.com/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Portfolio Website" />
-    <link rel="apple-touch-icon" href="https://www.jackbotein.com/favicon.ico" />
-    <link rel="manifest" href="https://www.jackbotein.com/manifest.json" />
+---
+layout: default
+---
 
-    <title>Jack Botein</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-
-  </body>
-</html>
+<div id="site">
+  {% include switch.html %}
+  {% include intro.html %}
+  {% include background.html %}
+  {% include skills.html %}
+  {% include experience.html %}
+  {% include featured-projects.html %}
+  {% include other-projects.html %}
+  {% include footer.html %}
+  {% include top-button.html %}
+</div>
