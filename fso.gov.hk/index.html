@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+
+<head>
+
+
+<meta charset="utf-8">
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Financial Secretary - Home</title>
+
+
+<meta name="keywords" content="Financial Secretary, Home" />
+
+
+<link rel="stylesheet" href="https://www.fso.gov.hk/css/bootstrap.css">
+
+
+<link rel="stylesheet" href="https://www.fso.gov.hk/css/common.css" type="text/css" />
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+
+
+
+<script src="https://www.fso.gov.hk/js/jquery.min.js"></script>
+
+
+<script src="https://www.fso.gov.hk/js/bootstrap.min.js"></script>
+
+
+<script language="JavaScript" type="text/javascript" src="https://www.fso.gov.hk/js/common.js"></script>
+
+
+<script src="https://www.fso.gov.hk/js/kanhan.js"></script>
+
+
+
+
+
+
+<script type="text/javascript">
+
+
+//scrolling top trun to fix top
+
+
+$(window).scroll(function(){
+
+
+//Header
+
+
+if($(window).scrollTop()>= $('.header').outerHeight() && $(window).scrollTop() - $('.header').outerHeight() > $('#myNav').height()){
+
+
+$('.navbar').addClass('navbar-fixed-top');
+
+
+} if(($(window).scrollTop()) < $('.header').outerHeight()){
+
+
+	$('.navbar').removeClass('navbar-fixed-top');
+
+
+}
+
+
+});
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+<style>
+
+
+#popupModal .modal-content {
+
+
+background-color: #FFF6CF;
+
+
+}
+
+
+
+
+
+
+#popupModal .modal-header {
+
+
+border-bottom: none;
+
+
+}
+
+
+
+
+
+
+#popupModal .modal-footer {
+
+
+border-top: none;
+
+
+}
+
+
+
+
+
+
+#popupModal .modal-body {
+
+
+padding: 12px 16px;
+
+
+}
+
+
+
+
+
+
+@media (min-width: 768px) {
+
+
+#popupModal .modal-body {
+
+
+padding: 12px 32px;
+
+
+}
+
+
+}
+
+
+
+
+
+
+#popupModal .modal-body p {
+
+
+text-align: left;
+
+
+}
+
+
+
+
+
+
+#popupModal .modal-footer button {
+
+
+background-color: #eee;
+
+
+}
+
+
+
+
+
+
+#popupModal .modal-footer button:hover {
+
+
+background-color: #ddd;
+
+
+}
+
+
+</style>
+
+
+
+
+
+
+<style>
+
+
+.carousel-control-prev {
+
+
+	width: 5%;
+
+
+}
+
+
+.carousel-control-next {
+
+
+	width: 10%;
+
+
+}
+
+
+#carouselButtons {
+
+
+	position: absolute;
+
+
+/*
+
+
+	margin-left: 10px;
+
+
+	bottom: 5px;
+
+
+*/
+
+
+right: 4%;
+
+
+bottom: 4%;
+
+
+}
+
+
+
+
+
+
+#carouselButtons button {
+
+
+	width: 25px;
+
+
+	margin-left: 5px;
+
+
+	/* margin-bottom: 15px; */
+
+
+}
+
+
+</style>
+
+
+
+
+
+
+</head>
+
+
+<body onload="resetSize()">
+
+
+<a class="skip-main" href="#skip_to_main">Skip to main content</a>
+
+
+<!-- navgation bar for both desktop and mobile -->
+
+
+	<div class="container">
+
+
+		<div class="header">
+
+
+			<div class="row">
+
+
+				<div class="col-md-6 col-sm-6 col-xs-10"><a href="index.htm"><img src="https://www.fso.gov.hk/eng/images/logo.png" width="500" height="113" alt="Financial Secretary" title="Financial Secretary" border="0" class="img-responsive grayscale" ></a></div>
+
+
+				<div class="col-md-6 col-sm-6 hidden-xs text-right" >
+
+
+					<div class="fore_dw">
+
+
+						<form class="navbar-form navbar-right" id="searchform" name="searchform" method="get" action="//www.search.gov.hk/search.html">
+
+
+							
+
+
+							<input type="search" placeholder="Search" name="query" id="query" value="" title="search">
+
+
+						<input name="gp0" value="fso_home" type="hidden" />
+
+
+						<input name="gp1" value="fso_home" type="hidden" />
+
+
+						<input name="p_size" value="10" type="hidden" />
+
+
+						<input name="ui_lang" value="en" type="hidden" />
+
+
+						<input name="ui_charset" value="utf-8" type="hidden" />
+
+
+						<input name="web" value="this" type="hidden" />
+
+
+						<input name="tpl_id" value="stdsearch" type="hidden" />
+
+
+						
+
+
+						
+
+
+						</form>
+
+
+					</div>
+
+
+				</div>
+
+
+			</div>
+
+
+		</div>
+
+
+	</div>
+
+
+
+
+
+
+	<div class="container">
+
+
+			<!-- Fixed navbar -->
+
+
+			<nav id="myNav" class="navbar navbar-default">
+
+
+				<div class="navbar-header">
+
+
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+
+
+						<span class="sr-only">Toggle navigation</span>
+
+
+						<span class="icon-bar"></span>
+
+
+						<span class="icon-bar"></span>
+
+
+						<span class="icon-bar"></span>
+
+
+					</button>
+
+
+
+
+
+
+				<div id="navbar" class="navbar-collapse collapse">
+
+
+					<ul class="nav navbar-nav">
+
+
+						<li class="hidden-lg hidden-md hidden-sm"><span id="langM"><a href="javascript:changeFontSize(1);"><img src="https://www.fso.gov.hk/eng/images/bt_font_S_o.jpg" title="Default Font Size" alt="Default Font Size" border="0" id="sizeS2"></a><a href="javascript:changeFontSize(2);"><img src="https://www.fso.gov.hk/eng/images/bt_font_M.jpg" title="Larger Font Size" alt="Larger Font Size" border="0" id="sizeM2"></a><a href="javascript:changeFontSize(3);" ><img src="https://www.fso.gov.hk/eng/images/bt_font_L.jpg" title="Largest Font Size" alt="Largest Font Size" border="0" id="sizeL2"></a> <a href="javascript:;" class="lang" id="lang3"><img src="https://www.fso.gov.hk/eng/images/chi.jpg" width="31" height="31"></a> <a href="javascript:;" class="lang" id="lang4"><img src="https://www.fso.gov.hk/eng/images/sim.jpg" width="31" height="31"></a></span></li>
+
+
+						<li class="hidden-lg hidden-md hidden-sm">
+
+
+							<form class="navbar-form navbar-right" action="//www.search.gov.hk/search.html" method="get">
+
+
+							<span id="searchM"><label for="querym"><input type="search" placeholder="Search" name="query" id="querym" value=""></label></span>
+
+
+							<input name="gp0" value="fso_home" type="hidden" />
+
+
+							<input name="gp1" value="fso_home" type="hidden" />
+
+
+							<input name="p_size" value="10" type="hidden" />
+
+
+							<input name="ui_lang" value="en" type="hidden" />
+
+
+							<input name="ui_charset" value="utf-8" type="hidden" />
+
+
+							<input name="web" value="this" type="hidden" />
+
+
+							<input name="tpl_id" value="stdsearch" type="hidden" />
+
+
+						</form></li>
+
+
+
+
+
+
+								<li><a href="index.htm" style="color:#0055a6;">Home</a></li>
+
+
+								<li><a href="blog/index.htm">My Blog</a></li>
+
+
+								<li><a href="role.htm">Role</a></li>
+
+
+								<li><a href="bio.htm">Biography</a></li>
+
+
+								<li><a href="press.htm">Press Releases</a></li>
+
+
+								<li><a href="speech.htm">Major Speeches</a></li>
+
+
+								<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Media<span class="caret"></span></a>
+
+
+									<ul class="dropdown-menu">
+
+
+										<li><a href="gallery/">Photos</a></li>
+
+
+										<li class="divider"></li>
+
+
+										<li><a href="audio.htm">Videos</a></li>
+
+
+									</ul>
+
+
+								</li>
+
+
+								<li><a href="links.htm">Links</a></li>
+
+
+								<li><a href="contactus.htm">Contact</a></li>
+
+
+								<li><a href="sitemap.htm">Site Map</a></li>
+
+
+						<div class="hidden-lg hidden-md hidden-sm hidden-xs"><hr></div>
+
+
+						<li class="hidden-lg hidden-md hidden-sm"><a href="notices.htm">Important notices</a></li>
+
+
+						<li class="hidden-lg hidden-md hidden-sm"><a href="privacy.htm">Privacy Policy</a></li>
+
+
+
+
+
+
+					</ul>
+
+
+				</div><!--/.nav-collapse -->
+
+
+			<span class="hidden-xs"><hr class="new1"></span>
+
+
+</nav>
+
+
+	</div>
+
+
+
+
+
+
+<!-- end -->
+
+
+
+
+
+
+<!-- Content -->
+
+
+<div class="container">
+
+
+<!--div class="row"><a href="https://www.coronavirus.gov.hk/eng/index.html" target="_blank"><img src="https://www.fso.gov.hk/eng/images/bg01_virus.jpg" align="center" alt="Together, We Fight the Virus!" width="" height="" border="0" class="img-responsive" title="Together, We Fight the Virus!"></a>
+
+
+<!--img src="https://www.fso.gov.hk/images/bg01.jpg" align="center" alt="" width="" height="" border="0" class="img-responsive" title=""-->
+
+
+<!--/div-->
+
+
+
+
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+
+<div class="carousel-inner" role="listbox">
+
+
+<div class="item active"><a href="https://www.coronavirus.gov.hk/eng/index.html" target="_blank"><img src="https://www.fso.gov.hk/eng/images/bg01_virus.jpg" align="center" alt="Together, We Fight the Virus!" width="" height="" border="0" class="img-responsive" title="Together, We Fight the Virus!"></a></div>
+
+
+<div class="item"><a href="https://www.isd.gov.hk/nationalsecurity/eng/" target="_blank"><img src="https://www.fso.gov.hk/eng/images/bg01b_nsl_safeguard_en_c.jpg" alt="Safeguarding National Security" title="Safeguarding National Security"></a></div>
+
+
+</div>
+
+
+<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+
+
+<div id="carouselButtons">
+
+
+<button id="playButton" type="button" class="btn btn-default btn-xs"> <span class="glyphicon glyphicon-play"></span> </button>
+
+
+<button id="pauseButton" type="button" class="btn btn-default btn-xs"> <span class="glyphicon glyphicon-pause"></span> </button>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="container" id="content">
+
+
+	<div class="row">
+
+
+		<div class="middle">
+
+
+
+
+
+
+			<div class="col-xs-12 col-sm-4 cols-md-4 col-lg-3">
+
+
+				<h1 id="skip_to_main" tabindex="-1">
+
+
+				<strong>Welcome Message</strong></h1>
+
+
+			</div>
+
+
+			<div class="col-xs-12 col-sm-8 cols-md-8 col-lg-9">
+
+
+<br>
+
+
+				
+
+
+				 <p><img src="https://www.fso.gov.hk/images/paul_chan.jpg" alt="CHAN Mo-po, Paul" title="CHAN Mo-po, Paul" class="left portrait" align="left"/>Welcome to my website.</p>
+
+
+				 <p>Hong Kong is an international financial, transportation and trade centre, as well as an international offshore Renminbi business hub and asset management centre. We are highly competitive globally in the areas of financing services, business and commerce, logistics and professional services. Our fair and open business environment, highly efficient market and the rule of law, has been the driving force of a vibrant and energetic business sector in Hong Kong. We have been attracting a large number of enterprises and investors from overseas and the Mainland to come to Hong Kong for business.</p>
+
+
+<p>Hong Kong is an open and small economy facing fierce competition from around the world. We must make full use of the unique advantages of &quot;one country, two systems&quot; as well as our deep pool of talents with global vision, in order to seize the enormous opportunities brought about by the development of our nation and to achieve more economic success for Hong Kong.</p>
+
+
+<p>As Financial Secretary, I shall strive to maintain Hong Kong's favourable business environment, to consolidate the advantages of our pillar industries and at the same time to diversify Hong Kong's economy through opening up new markets and nurturing new industries, so that people from different segments of society will be able to share the benefits of economic advancement, and that there will be more choices of quality jobs for the young people. </p>
+
+
+<p>I shall endeavour to achieve a fiscal balance, to dedicate public resources flexibly for launching various Government projects, and to provide public services that suit the needs of the community and promote social and economic development of Hong Kong. On land supply, I shall be leading the relevant departments to work together to provide Hong Kong with sufficient land resources in satisfying our needs for economic development, housing as well as for improving people's livelihood.</p>
+
+
+<p>You are welcome to drop me a line through email or other channel to let us know your views and thoughts on my work. Thank you!</p>
+
+
+<p>CHAN Mo-po, Paul</p>
+
+
+Financial Secretary
+
+
+				<p>&nbsp;</p>
+
+
+			</div>
+
+
+		</div>
+
+
+	</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="container" id="content">
+
+
+<hr>
+
+
+	<!-- bottom banners -->
+
+
+	<div class="row text-center"><script language="JavaScript" type="text/javascript" src="https://www.fso.gov.hk/javascript/banners.js"></script></div>
+
+
+
+
+
+
+	<div class="row text-center">
+
+
+		
+
+
+		<div class="inline-block"><a href="https://www.brandhk.gov.hk/html/en/" target="_blank"><img src="https://www.fso.gov.hk/eng/images/banners/ban_brandhk.jpg" alt="BrandHK | 香港品牌" border="0" class="img-responsive" title="BrandHK | 香港品牌"></a></div>
+
+
+	</div>
+
+
+</div>
+
+
+
+
+
+
+<!-- Footer -->
+
+
+<footer id="myfooter" class="container">
+
+
+	
+
+
+	
+
+
+	<div class="copyright"><div class="inline-block"><a href="https://www.ogcio.gov.hk/en/our_work/community/web_mobileapp_accessibility/nurturing_expertise/recognition_scheme/" target="_blank"><img src="https://www.fso.gov.hk/eng/images/banners/ban_web_for_all.jpg" class="img-responsive" alt="Web Accessibility Recognition Scheme" title="Web Accessibility Recognition Scheme"></a></div>
+
+
+	<div class="inline-block"><a href="https://www.w3.org/WAI/WCAG2AA-Conformance" target="_blank"><img src="https://www.fso.gov.hk/eng/images/banners/ban_W3C.jpg" alt="Level Double-A conformance, W3C WAI Web Content Accessibility Guidelines 2.0" border="0" align="right" class="img-responsive" title="Level Double-A conformance, W3C WAI Web Content Accessibility Guidelines 2.0"></a></div></div>
+
+
+	<div class="revision">2020 &copy; | <a href="notices.htm" class="footer">Important notices</a> | <a href="privacy.htm" class="footer">Privacy Policy</a> | Last revision date: June 18, 2021</div>
+
+
+	
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+<!-- Modal -->
+
+
+<div class="modal fade" id="popupModal" role="dialog" tabindex="-1">
+
+
+<div class="modal-dialog"-->
+
+
+<!-- Modal content-->
+
+
+<div class="modal-content">
+
+
+<div class="modal-header">
+
+
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+
+
+</div>
+
+
+<div class="modal-body">
+
+
+			<p>The HKSAR Government has published <a href="https://www.hkeconomy.gov.hk/en/environment/index.htm" target="_blank" rel="noopener">"Report on Hong Kong's Business Environment: A Place with Unique Advantages and Unlimited Opportunities"</a>, which sets out Hong Kong's current business environment and advantages, and describes the development opportunities available to Hong Kong under the country's new phase and pattern of development. </p>
+
+
+			<!--p>Consumption Voucher Scheme will open for registration on 4 July 2021. Hong Kong permanent residents and new arrivals aged 18 or above on or before 18 June 2021 and residing in Hong Kong may register electronically or using paper forms to receive electronic consumption vouchers of $5,000 by instalments. Registration will close on 14 August 2021. Please browse the website of the Scheme at <a href="https://www.consumptionvoucher.gov.hk/en/index.html" target="_blank" rel="noopener">www.consumptionvoucher.gov.hk</a> or call the hotline 18 5000 to obtain detailed information. </p>
+
+
+			<!--p>The Financial Secretary, Mr Paul Chan, delivered the 2021-22 Budget on February 24. Please visit <a href="https://www.budget.gov.hk/2021/eng/index.html" target="_blank" rel="noopener" title="www.budget.gov.hk" alt="www.budget.gov.hk">www.budget.gov.hk</a> for more details. </p-->
+
+
+			<!--p>Public consultation exercise for the 2021-22 Budget has commenced. Please visit <a href="https://www.budget.gov.hk/consultation21/eng/index.html" target="_blank" rel="noopener" title="www.budget.gov.hk" alt="www.budget.gov.hk">www.budget.gov.hk</a> to share your views.</p>
+
+
+			<!--p>The Cash Payout Scheme has opened for registration on June&nbsp;21, 2020. Hong Kong permanent residents aged 18 or above on or before March&nbsp;31, 2021, may register electronically or use a paper form to receive $10,000. Registration will close on December&nbsp;31, 2021. Please browse the website of the Scheme <a href="https://www.cashpayout.gov.hk/eng/index.html" target="_blank" rel="noopener">https://www.cashpayout.gov.hk/</a> or call 18&nbsp;2020 to obtain detailed information.</p-->
+
+
+</div>
+
+
+<div class="modal-footer">
+
+
+<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<script type="text/javascript">
+
+
+$(window).on('load',function(){
+
+
+$('#popupModal').modal('show');
+
+
+});
+
+
+</script>
+
+
+
+
+
+
+<script>
+
+
+$(function () {
+
+
+	//Celebration events carosel
+
+
+$('#myCarousel').carousel({
+
+
+interval: 6000,
+
+
+pause: "false"
+
+
+});
+
+
+$('#playButton').click(function () {
+
+
+$('#myCarousel').carousel('cycle');
+
+
+});
+
+
+$('#pauseButton').click(function () {
+
+
+$('#myCarousel').carousel('pause');
+
+
+});
+
+
+});
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+
+
+</html>
+
+
