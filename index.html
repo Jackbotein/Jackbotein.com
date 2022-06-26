@@ -198,19 +198,12 @@ a {
   }
 
 </style>
-  <script type="text/javascript">
-var load = 0;
-
-function loadtracker() {
-document.getElementById('gform').onload = function() {
-    /*Execute on every reload on iFrame*/
-    load++;
-    if(load > 1){
-        /*Second reload is a submit*/
-        window.location.href = "https://jackbotein.com/mobile.html";
-    }
+  <script language="javascript">
+<!--
+if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+   location.replace("https://jackbotein.com/mobile.html");
 }
-}
+-->
 </script>
   
 <center>
