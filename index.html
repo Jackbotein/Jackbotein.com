@@ -198,6 +198,21 @@ a {
   }
 
 </style>
+  <script type="text/javascript">
+var load = 0;
+
+function loadtracker() {
+document.getElementById('gform').onload = function() {
+    /*Execute on every reload on iFrame*/
+    load++;
+    if(load > 1){
+        /*Second reload is a submit*/
+        window.location.href = "https://jackbotein.com/mobile.html";
+    }
+}
+}
+</script>
+  
 <center>
 <div class="header">
 <img src="https://patch.com/img/cdn20/users/25399785/20211122/121137/f49fcb67-2005-49ac-a613-2333f5e88789___22121135843.jpg" class="logo">
