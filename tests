@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Sheets Column Data</title>
+</head>
+<body>
+    <script>
+        const sheetId = '1rSePeDaXSUTL5vjX4ak_sPAvubvjyBXzog-DXvhX4pE';
+        const sheetRange = 'CBIDailyValetWorkLog!E2:E';
+        const apiKey = 'AIzaSyCATkORhaCRFH9N5Y50yMNZWh2pcS5D7zU'; // Keep your API keys secret
+        const endpoint = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${sheetRange}?key=${apiKey}`;
+
+        fetch(endpoint)
+            .then(response => response.json())
+            .then(data => {
+                const filteredData = data.values.filter(row => row[0].startsWith("https://easilytip.peachs.co/a/") && row[0].length > "https://easilytip.peachs.co/a/".length);
+                
+                let randomNumber = Math.floor(Math.random() * filteredData.length);
+                window.location.href = filteredData[randomNumber][0];
+            })
+            .catch(error => console.error('Error:', error));
+    </script>
+</body>
+</html>
